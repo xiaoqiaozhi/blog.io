@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Kali Linux 新版安装教程</title>
+    <url>/2020/07/24/Kali%20Linux%202020.1%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
+    <content><![CDATA[<p>新版的kali界面变得好好看啊，但不能避免遇到一些麻烦，所以自己记录一下安装过程，避免以后每次都要上网搜安装教程，看自己的更方便一点<br>马上新学期了，学弟们也可以用得到<br><img src="https://img-blog.csdnimg.cn/20200724114756577.png"></p>
+<span id="more"></span>
+
+<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>VMware 15.5<br>Kali Linux 2020.1 镜像</p>
+<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
+<li><p>选择创建新虚拟机<img src="https://img-blog.csdnimg.cn/20200724111117401.png"></p>
+</li>
+<li><p>典型或者自定义都可以<br><img src="https://img-blog.csdnimg.cn/2020072411115354.png"></p>
+</li>
+<li><p>默认往下<br><img src="https://img-blog.csdnimg.cn/20200724111211101.png"></p>
+</li>
+<li><p>选择稍后安装操作系统<br><img src="https://img-blog.csdnimg.cn/20200724111332369.png"></p>
+</li>
+<li><p>操作系统选择Linux 、 版本选择Debian<br><img src="https://img-blog.csdnimg.cn/20200724111415351.png"></p>
+</li>
+<li><p>选择安装位置<br><img src="https://img-blog.csdnimg.cn/20200724111415348.png"></p>
+</li>
+<li><p>根据自己的电脑配置选择<br><img src="https://img-blog.csdnimg.cn/20200724123828763.png"><br><img src="https://img-blog.csdnimg.cn/20200724111525865.png"></p>
+</li>
+<li><p>桥接、NAT选一个就行<br><img src="https://img-blog.csdnimg.cn/20200724111546231.png"></p>
+</li>
+</ol>
+<ol start="9">
+<li><p>默认往下<br><img src="https://img-blog.csdnimg.cn/20200724111709362.png"><br><img src="https://img-blog.csdnimg.cn/20200724111732838.png"><br><img src="https://img-blog.csdnimg.cn/20200724111732837.png"></p>
+</li>
+<li><p>选择磁盘大小，电脑磁盘足够空间的选择存储为单个文件，小的就选择拆分为多个文件<img src="https://img-blog.csdnimg.cn/20200724111759355.png"></p>
+</li>
+<li><p>选择存储地址<br><img src="https://img-blog.csdnimg.cn/20200724111951572.png"></p>
+</li>
+<li><p>自定义硬件<br><img src="https://img-blog.csdnimg.cn/20200724112041407.png"></p>
+</li>
+<li><p>可以移除不需要的设备  声卡、打印机<img src="https://img-blog.csdnimg.cn/20200724121508263.png"></p>
+</li>
+<li><p>选择下载好的kali镜像<img src="https://img-blog.csdnimg.cn/20200724112210825.png"></p>
+</li>
+<li><p>开启虚拟机，选择语言，最好English，实在不好的选中文，没有啥影响<img src="https://img-blog.csdnimg.cn/20200724112400553.png"><img src="https://img-blog.csdnimg.cn/20200724112400674.png"><br><img src="https://img-blog.csdnimg.cn/20200724112400667.png"></p>
+</li>
+</ol>
+<ol start="17">
+<li><p>加载过后，填写【主机名】、【用户名】、【密码】，开始下载<img src="https://img-blog.csdnimg.cn/20200724112931277.png"><br><img src="https://img-blog.csdnimg.cn/20200724112931273.png"></p>
+</li>
+<li><p>操作如下<br><img src="https://img-blog.csdnimg.cn/20200724113034798.png"><br><img src="https://img-blog.csdnimg.cn/20200724113034796.png"><img src="https://img-blog.csdnimg.cn/20200724113034802.png"><img src="https://img-blog.csdnimg.cn/20200724113034854.png"><br><img src="https://img-blog.csdnimg.cn/20200724113034853.png"></p>
+</li>
+</ol>
+<ol start="19">
+<li><p>正常会开始下载和安装，若出现Installation Failure 安装失败，选择默认继续</p>
+</li>
+<li><p>到达【安装目录】 选择 运行 shell<img src="https://img-blog.csdnimg.cn/2020072411371587.png"></p>
+</li>
+<li><p>切换目录，注释官方源，修改kali源</p>
+</li>
+</ol>
+<blockquote>
+<p>#中科大<br>deb <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib<br>deb-src <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib<br>#阿里云<br>deb <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib<br>deb-src <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib<br>#清华大学<br>deb <a href="http://mirrors.tuna.tsinghua.edu.cn/kali">http://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free<br>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/kali">https://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20200724114133789.png"><br><img src="https://img-blog.csdnimg.cn/20200724114133795.png"></p>
+<ol start="21">
+<li><p>ctrl+o 回车保存，ctrl+x 退出，回到主目录，选择 安装软件，默认继续，这样安装应该就没有问题了<br><img src="https://img-blog.csdnimg.cn/20200724114450590.png"><br><img src="https://img-blog.csdnimg.cn/20200724114450596.png"></p>
+</li>
+<li><p>将GRUB安装到硬盘，选择【是】，然后选择设备 【/dev/sda】，然后进一步安装</p>
+</li>
+<li><p>安装完成<br><img src="https://img-blog.csdnimg.cn/20200724114756577.png"></p>
+</li>
+<li><p>安装好VMware Tools：VMware菜单选择【虚拟机】，【安装Vmare Tools】,根据系统提示，登录虚拟机，home目录中，找到VMware Tools 光驱文件，复制到任意文件夹，使用tar -zxvf  文件名  解压；找到 vmware-install pl 文件并运行就ok了，根据提示一步步往下就行<img src="https://img-blog.csdnimg.cn/20200724120154931.png"></p>
+</li>
+<li><p>注意：新版kali 默认用户名和密码：kali  kali </p>
+</li>
+<li><p>最后建议一开始拍摄一下快照：【虚拟机】【快照】【拍摄快照】<br><img src="https://img-blog.csdnimg.cn/2020072412202461.png"></p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这样就可以畅玩kali啦</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>安装教程</category>
+        <category>kali Linux</category>
+      </categories>
+      <tags>
+        <tag>Kali Linux</tag>
+        <tag>操作系统</tag>
+        <tag>安装教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>利用Burpsuite爆破路由器管理员密码</title>
+    <url>/2020/04/13/brute_router_passwd/</url>
+    <content><![CDATA[<p>之前家里网断了，找人来修，于是就升级了一下网络，并重新换了猫和路由器。但管理员密码我并不知道，但初始应该是弱口令，我想可以用字典爆破一下。<br><img src="https://img-blog.csdnimg.cn/20200413142129605.png" alt="在这里插入图片描述"></p>
+<span id="more"></span>
+
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>burpsuite、Chrome  </p>
+<h2 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h2><ol>
+<li>使用burpsuit的Proxy对路由器登录进行抓包(密码随便输就行了）<img src="https://img-blog.csdnimg.cn/20200413124928830.png" alt="在这里插入图片描述"></li>
+<li>很明显，密码在前端经过了加密，那我们不得不去查看前端加密的代码<img src="https://img-blog.csdnimg.cn/20200413125604303.png" alt="在这里插入图片描述"></li>
+<li>每个厂家的路由器对密码加密方式都不一样，有的没有，我家的是tp-link,我猜这个厂家所有路由器管理员密码应该都是这样加密的8.这是关键代码：</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">`securityEncode: function(a, b, c) &#123;</span></span><br><span class="line"><span class="string">           var e = &quot;&quot;, f, g, h, k, l = 187, n = 187;</span></span><br><span class="line"><span class="string">           g = a.length;</span></span><br><span class="line"><span class="string">           h = b.length;</span></span><br><span class="line"><span class="string">           k = c.length;</span></span><br><span class="line"><span class="string">           f = g &gt; h ? g : h;</span></span><br><span class="line"><span class="string">           for (var p = 0; p &lt; f; p++)</span></span><br><span class="line"><span class="string">               n = l = 187,</span></span><br><span class="line"><span class="string">               p &gt;= g ? n = b.charCodeAt(p) : p &gt;= h ? l = a.charCodeAt(p) : (l = a.charCodeAt(p),</span></span><br><span class="line"><span class="string">               n = b.charCodeAt(p)),</span></span><br><span class="line"><span class="string">               e += c.charAt((l ^ n) % k);</span></span><br><span class="line"><span class="string">           return e</span></span><br><span class="line"><span class="string">       &#125;,</span></span><br><span class="line"><span class="string">       orgAuthPwd: function(a) &#123;</span></span><br><span class="line"><span class="string">           return $.securityEncode(&quot;RDpbLfCPsJZ7fiv&quot;, a, &quot;yLwVl0zKqws7LgKPRQ84Mdt708T1qQ3Ha7xv3H7NyU84p21BriUWBU43odz3iP4rBL3cD02KZciXTysVXiV8ngg6vL48rPJyAUw0HurW20xqxv9aYb4M9wK1Ae0wlro510qXeU07kV57fQMc8L6aLgMLwygtc0F10a0Dg70TOoouyFhdysuRMO51yY5ZlOZZLEal1h0t9YQW0Ko7oBwmCAHoic4HYbUyVeU3sfQ1xtXcPcf1aT303wAQhv66qzW&quot;)</span></span><br><span class="line"><span class="string">       &#125;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>明文字典是无法爆破的，所以我们可以将字典使用上面的代码进行加密，然后再进行爆破。这是参考上面的javascript写的python</li>
+</ol>
+<figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line">short = <span class="string">&quot;RDpbLfCPsJZ7fiv&quot;</span></span><br><span class="line">long = <span class="string">&#x27;yLwVl0zKqws7LgKPRQ84Mdt708T1qQ3Ha7xv3H7NyU84p21BriUWBU43odz3iP4rBL3cD02KZciXTysVXiV8ngg6vL48rPJyAUw0HurW20xqxv9aYb4M9wK1Ae0wlro510qXeU07kV57fQMc8L6aLgMLwygtc0F10a0Dg70TOoouyFhdysuRMO51yY5ZlOZZLEal1h0t9YQW0Ko7oBwmCAHoic4HYbUyVeU3sfQ1xtXcPcf1aT303wAQhv66qzW&#x27;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">passwd</span>(<span class="params">a, b, c</span>):</span></span><br><span class="line">	e = <span class="string">&#x27;&#x27;</span></span><br><span class="line">	f, g, h, k, l = <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span></span><br><span class="line">	n = <span class="number">187</span></span><br><span class="line">	g = <span class="built_in">len</span>(a)</span><br><span class="line">	h = <span class="built_in">len</span>(b)</span><br><span class="line">	k = <span class="built_in">len</span>(c)</span><br><span class="line">	f = g <span class="keyword">if</span> g &gt; h <span class="keyword">else</span> h</span><br><span class="line">	<span class="keyword">for</span> p <span class="keyword">in</span> <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">0</span>, f)):</span><br><span class="line">		n = l = <span class="number">187</span></span><br><span class="line">		<span class="keyword">if</span> p &gt;= g:</span><br><span class="line">			n = <span class="built_in">ord</span>(b[p])</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">if</span> p &gt;= h:</span><br><span class="line">				l = <span class="built_in">ord</span>(a[p])  <span class="comment">#ord()对应javascript中的charCodeAt()</span></span><br><span class="line">			<span class="keyword">else</span>:</span><br><span class="line">				l = <span class="built_in">ord</span>(a[p])</span><br><span class="line">				n = <span class="built_in">ord</span>(b[p])</span><br><span class="line">		e += c[(l ^ n) % k]</span><br><span class="line">	<span class="built_in">print</span>(e)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wordlist</span>():</span></span><br><span class="line">	f = <span class="built_in">open</span>(<span class="string">&quot;F:\\wordlist\\fuzzDicts-master\\routerDicts\\pass.txt&quot;</span>) <span class="comment">#字典的路径</span></span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">		passwd(short, line.rstrip(), long)</span><br><span class="line">	f.close()</span><br><span class="line">wordlist()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>拿到密文字典之后，赶快放到burpsuite中爆破一下<br><img src="https://img-blog.csdnimg.cn/20200413140518324.png" alt="在这里插入图片描述"></li>
+<li>参考明文字典，得到的密码是123456，然后就可以成功登陆啦！<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>我们平时一定要有防备意识，尽量修改一下路由器管理员的初始密码，有想法的人一旦进入到你家的内网，后果很严重的。<br>其实字典爆破只能针对某些安全机制较低的路由器，大多路由器会限制你的登录次数，会认为是恶意登录，输满次数会让你重启路由器。所以运气不好，可能密码再简单，字典也没有用了，哈哈哈~<img src="https://img-blog.csdnimg.cn/20200413141836141.png" alt="在这里插入图片描述"></li>
+</ol>
+]]></content>
+      <categories>
+        <category>信息安全</category>
+        <category>网络</category>
+      </categories>
+      <tags>
+        <tag>信息安全</tag>
+        <tag>工具</tag>
+        <tag>路由器</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Kon-Boot绕过登录密码</title>
+    <url>/2020/04/12/konboot/</url>
+    <content><![CDATA[<h2 id="Kon-Boot绕过登录密码"><a href="#Kon-Boot绕过登录密码" class="headerlink" title="Kon-Boot绕过登录密码"></a>Kon-Boot绕过登录密码</h2><p>kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。<br>原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。</p>
+<span id="more"></span>
+<p>接下来 ，我就复现一下window下u盘启动的方式<br>工具：Kon-Boot+2.7<br>平台：虚拟机win10</p>
+<p>首先得下载kon-boot 工具，但这是个收费软件，可以找破解版的<br>1.然后制作一个u盘启动盘，打开文件<br><img src="https://img-blog.csdnimg.cn/20200412034856586.png" alt="在这里插入图片描述"><br>2.直接双击运行vbs脚本文件 (Win7操作系统需要以管理员运行运行下面的批处理文件，其他系统不必<br><img src="https://img-blog.csdnimg.cn/20200412034925494.png" alt="在这里插入图片描述"><br>3.对着接下来的弹窗点确定即可。<br><img src="https://img-blog.csdnimg.cn/20200412035057418.png" alt="在这里插入图片描述">4.这样说明ok了<br><img src="https://img-blog.csdnimg.cn/20200412025011163.png" alt="在这里插入图片描述"><br>5.图中的应用程序，可以在计算机进入登陆界面时，检验操作系统，弹出绕过方案<br><img src="https://img-blog.csdnimg.cn/20200412025029728.png" alt="在这里插入图片描述">6.我在Boot Manager 中没有找到有 EFI USB Device U盘确实插上了(我第一次测试是看到的  然后会出现首次的加载界面 后面再测试就没有了)    在这之前我们需要关闭电脑的Secure Boot<br><img src="https://img-blog.csdnimg.cn/20200412025040999.png" alt="在这里插入图片描述">7.手动从u盘中导入<br><img src="https://img-blog.csdnimg.cn/2020041202512637.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025134416.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025139540.png" alt="在这里插入图片描述">8.到达登陆界面时直接回车，是可以直接登录的，如果一次不行可以多试几次<br><img src="https://img-blog.csdnimg.cn/20200412025308472.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025312451.png" alt="在这里插入图片描述"></p>
+<p>9.但也可以使用快捷键 五次shift 可以弹出管理员控制台！不仅仅可以直接修改密码……<br><img src="https://img-blog.csdnimg.cn/20200412025324267.png" alt="在这里插入图片描述"><br>可见，kon-boot确实是很霸道的。<br>面对它的威胁，我们要有防范意识，比如在BIOS中禁用USB引导以及其他引导方式；  其次思想上应该端正自己，毕竟一念天堂，一念监狱啊，也不要尝试去恶搞一下舍友哦！<br><img src="https://img-blog.csdnimg.cn/20200412035306484.png" alt="在这里插入图片描述" style="zoom:50%;" /></p>
+]]></content>
+      <categories>
+        <category>Window破解</category>
+        <category>破解工具</category>
+      </categories>
+      <tags>
+        <tag>信息安全</tag>
+        <tag>工具</tag>
+        <tag>windows</tag>
+      </tags>
+  </entry>
+</search>
