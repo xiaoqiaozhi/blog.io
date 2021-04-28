@@ -3,6 +3,7 @@
 NexT.motion = {};
 
 NexT.motion.integrator = {
+	
   queue: [],
   init : function() {
     this.queue = [];

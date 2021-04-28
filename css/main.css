@@ -2843,7 +2843,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #3be26b;
+  background: #ff576e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2868,4 +2868,10 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+html {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

@@ -1,6 +1,26 @@
 if (!window.NexT) window.NexT = {};
 
 (function() {
+	
+	//分享限制
+	document.oncontextmenu=new Function("event.returnValue=false");  
+	document.onselectstart=new Function("event.returnValue=false");  
+	document.addEventListener('keydown', function(event){
+		return !(
+			112 == event.keyCode || //F1
+			123 == event.keyCode || //F12
+			event.ctrlKey && 82 == event.keyCode || //ctrl + R
+			event.ctrlKey && 78 == event.keyCode || //ctrl + N
+			event.ctrlKey && 85 == event.keyCode || //ctrl + U
+			event.shiftKey && 121 == event.keyCode || //shift + F10
+			event.altKey && 115 == event.keyCode || //alt + F4
+			"A" == event.srcElement.tagName && event.shiftKey //shift + 点击a标签
+		) || (event.returnValue = false)
+	});
+	document.ondragstart = function() {
+        return false;
+	};
+	
   const className = 'next-config';
 
   const staticConfig = {};
