@@ -22,5 +22,11 @@
  $$    $$/   
    $$$$$/
  
+$ sudo apt-get install python2.7
+$ sudo apt install python-pip
+$ sudo apt install python3-pip
  
- 
+
+$ sudo apt-get install python2.7  
+$ sudo apt install python-pip  
+$ sudo apt install python3-pip  
