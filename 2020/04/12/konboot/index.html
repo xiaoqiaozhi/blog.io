@@ -20,12 +20,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;xiaoqiaozhi.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Mist&quot;,&quot;version&quot;:&quot;8.3.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;right&quot;,&quot;width&quot;:200,&quot;display&quot;:&quot;remove&quot;,&quot;padding&quot;:30,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script>
-<meta name="description" content="kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。">
+<meta name="description" content="kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。 原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kon-Boot绕过登录密码">
 <meta property="og:url" content="https://xiaoqiaozhi.github.io/2020/04/12/konboot/">
 <meta property="og:site_name" content="ykNut&#39;s Blog">
-<meta property="og:description" content="kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。">
+<meta property="og:description" content="kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。 原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200412034856586.png">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20200412034925494.png">
@@ -222,11 +222,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。<br>原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。</p>
-<span id="more"></span>
-<p>接下来 ，我就复现一下window下u盘启动的方式<br>工具：Kon-Boot+2.7<br>平台：虚拟机win10</p>
-<p>首先得下载kon-boot 工具，但这是个收费软件，可以找破解版的<br>1.然后制作一个u盘启动盘，打开文件<br><img src="https://img-blog.csdnimg.cn/20200412034856586.png" alt="在这里插入图片描述"><br>2.直接双击运行vbs脚本文件 (Win7操作系统需要以管理员运行运行下面的批处理文件，其他系统不必<br><img src="https://img-blog.csdnimg.cn/20200412034925494.png" alt="在这里插入图片描述"><br>3.对着接下来的弹窗点确定即可。<br><img src="https://img-blog.csdnimg.cn/20200412035057418.png" alt="在这里插入图片描述">4.这样说明ok了<br><img src="https://img-blog.csdnimg.cn/20200412025011163.png" alt="在这里插入图片描述"><br>5.图中的应用程序，可以在计算机进入登陆界面时，检验操作系统，弹出绕过方案<br><img src="https://img-blog.csdnimg.cn/20200412025029728.png" alt="在这里插入图片描述">6.我在Boot Manager 中没有找到有 EFI USB Device U盘确实插上了(我第一次测试是看到的  然后会出现首次的加载界面 后面再测试就没有了)    在这之前我们需要关闭电脑的Secure Boot<br><img src="https://img-blog.csdnimg.cn/20200412025040999.png" alt="在这里插入图片描述">7.手动从u盘中导入<br><img src="https://img-blog.csdnimg.cn/2020041202512637.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025134416.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025139540.png" alt="在这里插入图片描述">8.到达登陆界面时直接回车，是可以直接登录的，如果一次不行可以多试几次<br><img src="https://img-blog.csdnimg.cn/20200412025308472.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025312451.png" alt="在这里插入图片描述"></p>
-<p>9.但也可以使用快捷键 五次shift 可以弹出管理员控制台！不仅仅可以直接修改密码……<br><img src="https://img-blog.csdnimg.cn/20200412025324267.png" alt="在这里插入图片描述"><br>可见，kon-boot确实是很霸道的。<br>面对它的威胁，我们要有防范意识，比如在BIOS中禁用USB引导以及其他引导方式；  其次思想上应该端正自己，毕竟一念天堂，一念监狱啊，也不要尝试去恶搞一下舍友哦！<br><img src="https://img-blog.csdnimg.cn/20200412035306484.png" alt="在这里插入图片描述" style="zoom:50%;" /></p>
+        <p>kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。<br />
+原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。 <span id="more"></span> 接下来 ，我就复现一下window下u盘启动的方式 工具：Kon-Boot+2.7<br />
+平台：虚拟机win10</p>
+<p>首先得下载kon-boot 工具，但这是个收费软件，可以找破解版的<br />
+1.然后制作一个u盘启动盘，打开文件<br />
+<img src="https://img-blog.csdnimg.cn/20200412034856586.png" alt="在这里插入图片描述" /> 2.直接双击运行vbs脚本文件 (Win7操作系统需要以管理员运行运行下面的批处理文件，其他系统不必 <img src="https://img-blog.csdnimg.cn/20200412034925494.png" alt="在这里插入图片描述" /> 3.对着接下来的弹窗点确定即可。 <img src="https://img-blog.csdnimg.cn/20200412035057418.png" alt="在这里插入图片描述" />4.这样说明ok了<br />
+<img src="https://img-blog.csdnimg.cn/20200412025011163.png" alt="在这里插入图片描述" /> 5.图中的应用程序，可以在计算机进入登陆界面时，检验操作系统，弹出绕过方案<br />
+<img src="https://img-blog.csdnimg.cn/20200412025029728.png" alt="在这里插入图片描述" />6.我在Boot Manager 中没有找到有 EFI USB Device U盘确实插上了(我第一次测试是看到的 然后会出现首次的加载界面 后面再测试就没有了) 在这之前我们需要关闭电脑的Secure Boot <img src="https://img-blog.csdnimg.cn/20200412025040999.png" alt="在这里插入图片描述" />7.手动从u盘中导入<br />
+<img src="https://img-blog.csdnimg.cn/2020041202512637.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025134416.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025139540.png" alt="在这里插入图片描述" />8.到达登陆界面时直接回车，是可以直接登录的，如果一次不行可以多试几次 <img src="https://img-blog.csdnimg.cn/20200412025308472.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025312451.png" alt="在这里插入图片描述" /></p>
+<p>9.但也可以使用快捷键 五次shift 可以弹出管理员控制台！不仅仅可以直接修改密码…… <img src="https://img-blog.csdnimg.cn/20200412025324267.png" alt="在这里插入图片描述" /> 可见，kon-boot确实是很霸道的。<br />
+面对它的威胁，我们要有防范意识，比如在BIOS中禁用USB引导以及其他引导方式； 其次思想上应该端正自己，毕竟一念天堂，一念监狱啊，也不要尝试去恶搞一下舍友哦！<br />
+<img src="https://img-blog.csdnimg.cn/20200412035306484.png" alt="在这里插入图片描述" style="zoom:50%;" /></p>
 
     </div>
 

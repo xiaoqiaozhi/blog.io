@@ -3,76 +3,46 @@
   <entry>
     <title>Kali Linux 新版安装教程</title>
     <url>/2020/07/24/Kali%20Linux%202020.1%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</url>
-    <content><![CDATA[<p>新版的kali界面变得好好看啊，但不能避免遇到一些麻烦，所以自己记录一下安装过程，避免以后每次都要上网搜安装教程，看自己的更方便一点<br>马上新学期了，学弟们也可以用得到<br><img src="https://img-blog.csdnimg.cn/20200724114756577.png"></p>
-<span id="more"></span>
-
-<h2 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h2><p>VMware 15.5<br>Kali Linux 2020.1 镜像</p>
-<h2 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h2><ol>
-<li><p>选择创建新虚拟机<img src="https://img-blog.csdnimg.cn/20200724111117401.png"></p>
-</li>
-<li><p>典型或者自定义都可以<br><img src="https://img-blog.csdnimg.cn/2020072411115354.png"></p>
-</li>
-<li><p>默认往下<br><img src="https://img-blog.csdnimg.cn/20200724111211101.png"></p>
-</li>
-<li><p>选择稍后安装操作系统<br><img src="https://img-blog.csdnimg.cn/20200724111332369.png"></p>
-</li>
-<li><p>操作系统选择Linux 、 版本选择Debian<br><img src="https://img-blog.csdnimg.cn/20200724111415351.png"></p>
-</li>
-<li><p>选择安装位置<br><img src="https://img-blog.csdnimg.cn/20200724111415348.png"></p>
-</li>
-<li><p>根据自己的电脑配置选择<br><img src="https://img-blog.csdnimg.cn/20200724123828763.png"><br><img src="https://img-blog.csdnimg.cn/20200724111525865.png"></p>
-</li>
-<li><p>桥接、NAT选一个就行<br><img src="https://img-blog.csdnimg.cn/20200724111546231.png"></p>
-</li>
-</ol>
-<ol start="9">
-<li><p>默认往下<br><img src="https://img-blog.csdnimg.cn/20200724111709362.png"><br><img src="https://img-blog.csdnimg.cn/20200724111732838.png"><br><img src="https://img-blog.csdnimg.cn/20200724111732837.png"></p>
-</li>
-<li><p>选择磁盘大小，电脑磁盘足够空间的选择存储为单个文件，小的就选择拆分为多个文件<img src="https://img-blog.csdnimg.cn/20200724111759355.png"></p>
-</li>
-<li><p>选择存储地址<br><img src="https://img-blog.csdnimg.cn/20200724111951572.png"></p>
-</li>
-<li><p>自定义硬件<br><img src="https://img-blog.csdnimg.cn/20200724112041407.png"></p>
-</li>
-<li><p>可以移除不需要的设备  声卡、打印机<img src="https://img-blog.csdnimg.cn/20200724121508263.png"></p>
-</li>
-<li><p>选择下载好的kali镜像<img src="https://img-blog.csdnimg.cn/20200724112210825.png"></p>
-</li>
-<li><p>开启虚拟机，选择语言，最好English，实在不好的选中文，没有啥影响<img src="https://img-blog.csdnimg.cn/20200724112400553.png"><img src="https://img-blog.csdnimg.cn/20200724112400674.png"><br><img src="https://img-blog.csdnimg.cn/20200724112400667.png"></p>
-</li>
-</ol>
-<ol start="17">
-<li><p>加载过后，填写【主机名】、【用户名】、【密码】，开始下载<img src="https://img-blog.csdnimg.cn/20200724112931277.png"><br><img src="https://img-blog.csdnimg.cn/20200724112931273.png"></p>
-</li>
-<li><p>操作如下<br><img src="https://img-blog.csdnimg.cn/20200724113034798.png"><br><img src="https://img-blog.csdnimg.cn/20200724113034796.png"><img src="https://img-blog.csdnimg.cn/20200724113034802.png"><img src="https://img-blog.csdnimg.cn/20200724113034854.png"><br><img src="https://img-blog.csdnimg.cn/20200724113034853.png"></p>
-</li>
-</ol>
-<ol start="19">
-<li><p>正常会开始下载和安装，若出现Installation Failure 安装失败，选择默认继续</p>
-</li>
-<li><p>到达【安装目录】 选择 运行 shell<img src="https://img-blog.csdnimg.cn/2020072411371587.png"></p>
-</li>
-<li><p>切换目录，注释官方源，修改kali源</p>
-</li>
+    <content><![CDATA[<p>新版的kali界面变得好好看啊，但不能避免遇到一些麻烦，所以自己记录一下安装过程，避免以后每次都要上网搜安装教程，看自己的更方便一点 马上新学期了，学弟们也可以用得到<br />
+<img src="https://img-blog.csdnimg.cn/20200724114756577.png" /> <span id="more"></span></p>
+<h2 id="准备工具">准备工具</h2>
+<p>VMware 15.5 Kali Linux 2020.1 镜像</p>
+<h2 id="过程">过程</h2>
+<ol type="1">
+<li><p>选择创建新虚拟机<img src="https://img-blog.csdnimg.cn/20200724111117401.png" /></p></li>
+<li><p>典型或者自定义都可以 <img src="https://img-blog.csdnimg.cn/2020072411115354.png" /></p></li>
+<li><p>默认往下<br />
+<img src="https://img-blog.csdnimg.cn/20200724111211101.png" /></p></li>
+<li><p>选择稍后安装操作系统 <img src="https://img-blog.csdnimg.cn/20200724111332369.png" /></p></li>
+<li><p>操作系统选择Linux 、 版本选择Debian <img src="https://img-blog.csdnimg.cn/20200724111415351.png" /></p></li>
+<li><p>选择安装位置 <img src="https://img-blog.csdnimg.cn/20200724111415348.png" /></p></li>
+<li><p>根据自己的电脑配置选择 <img src="https://img-blog.csdnimg.cn/20200724123828763.png" /> <img src="https://img-blog.csdnimg.cn/20200724111525865.png" /></p></li>
+<li><p>桥接、NAT选一个就行 <img src="https://img-blog.csdnimg.cn/20200724111546231.png" /></p></li>
+<li><p>默认往下 <img src="https://img-blog.csdnimg.cn/20200724111709362.png" /> <img src="https://img-blog.csdnimg.cn/20200724111732838.png" /> <img src="https://img-blog.csdnimg.cn/20200724111732837.png" /></p></li>
+<li><p>选择磁盘大小，电脑磁盘足够空间的选择存储为单个文件，小的就选择拆分为多个文件<img src="https://img-blog.csdnimg.cn/20200724111759355.png" /></p></li>
+<li><p>选择存储地址 <img src="https://img-blog.csdnimg.cn/20200724111951572.png" /></p></li>
+<li><p>自定义硬件 <img src="https://img-blog.csdnimg.cn/20200724112041407.png" /></p></li>
+<li><p>可以移除不需要的设备 声卡、打印机<img src="https://img-blog.csdnimg.cn/20200724121508263.png" /></p></li>
+<li><p>选择下载好的kali镜像<img src="https://img-blog.csdnimg.cn/20200724112210825.png" /></p></li>
+<li><p>开启虚拟机，选择语言，最好English，实在不好的选中文，没有啥影响<img src="https://img-blog.csdnimg.cn/20200724112400553.png" /><img src="https://img-blog.csdnimg.cn/20200724112400674.png" /> <img src="https://img-blog.csdnimg.cn/20200724112400667.png" /></p></li>
+<li><p>加载过后，填写【主机名】、【用户名】、【密码】，开始下载<img src="https://img-blog.csdnimg.cn/20200724112931277.png" /> <img src="https://img-blog.csdnimg.cn/20200724112931273.png" /></p></li>
+<li><p>操作如下 <img src="https://img-blog.csdnimg.cn/20200724113034798.png" /> <img src="https://img-blog.csdnimg.cn/20200724113034796.png" /><img src="https://img-blog.csdnimg.cn/20200724113034802.png" /><img src="https://img-blog.csdnimg.cn/20200724113034854.png" /> <img src="https://img-blog.csdnimg.cn/20200724113034853.png" /></p></li>
+<li><p>正常会开始下载和安装，若出现Installation Failure 安装失败，选择默认继续</p></li>
+<li><p>到达【安装目录】 选择 运行 shell<img src="https://img-blog.csdnimg.cn/2020072411371587.png" /></p></li>
+<li><p>切换目录，注释官方源，修改kali源</p></li>
 </ol>
 <blockquote>
-<p>#中科大<br>deb <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib<br>deb-src <a href="http://mirrors.ustc.edu.cn/kali">http://mirrors.ustc.edu.cn/kali</a> kali-rolling main non-free contrib<br>#阿里云<br>deb <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib<br>deb-src <a href="http://mirrors.aliyun.com/kali">http://mirrors.aliyun.com/kali</a> kali-rolling main non-free contrib<br>#清华大学<br>deb <a href="http://mirrors.tuna.tsinghua.edu.cn/kali">http://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free<br>deb-src <a href="https://mirrors.tuna.tsinghua.edu.cn/kali">https://mirrors.tuna.tsinghua.edu.cn/kali</a> kali-rolling main contrib non-free</p>
+<p>#中科大 deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib #阿里云 deb http://mirrors.aliyun.com/kali kali-rolling main non-free contrib deb-src http://mirrors.aliyun.com/kali kali-rolling main non-free contrib #清华大学 deb http://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free deb-src https://mirrors.tuna.tsinghua.edu.cn/kali kali-rolling main contrib non-free</p>
 </blockquote>
-<p><img src="https://img-blog.csdnimg.cn/20200724114133789.png"><br><img src="https://img-blog.csdnimg.cn/20200724114133795.png"></p>
-<ol start="21">
-<li><p>ctrl+o 回车保存，ctrl+x 退出，回到主目录，选择 安装软件，默认继续，这样安装应该就没有问题了<br><img src="https://img-blog.csdnimg.cn/20200724114450590.png"><br><img src="https://img-blog.csdnimg.cn/20200724114450596.png"></p>
-</li>
-<li><p>将GRUB安装到硬盘，选择【是】，然后选择设备 【/dev/sda】，然后进一步安装</p>
-</li>
-<li><p>安装完成<br><img src="https://img-blog.csdnimg.cn/20200724114756577.png"></p>
-</li>
-<li><p>安装好VMware Tools：VMware菜单选择【虚拟机】，【安装Vmare Tools】,根据系统提示，登录虚拟机，home目录中，找到VMware Tools 光驱文件，复制到任意文件夹，使用tar -zxvf  文件名  解压；找到 vmware-install pl 文件并运行就ok了，根据提示一步步往下就行<img src="https://img-blog.csdnimg.cn/20200724120154931.png"></p>
-</li>
-<li><p>注意：新版kali 默认用户名和密码：kali  kali </p>
-</li>
-<li><p>最后建议一开始拍摄一下快照：【虚拟机】【快照】【拍摄快照】<br><img src="https://img-blog.csdnimg.cn/2020072412202461.png"></p>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>这样就可以畅玩kali啦</p>
-</li>
+<p><img src="https://img-blog.csdnimg.cn/20200724114133789.png" /> <img src="https://img-blog.csdnimg.cn/20200724114133795.png" /></p>
+<ol start="21" type="1">
+<li><p>ctrl+o 回车保存，ctrl+x 退出，回到主目录，选择 安装软件，默认继续，这样安装应该就没有问题了 <img src="https://img-blog.csdnimg.cn/20200724114450590.png" /> <img src="https://img-blog.csdnimg.cn/20200724114450596.png" /></p></li>
+<li><p>将GRUB安装到硬盘，选择【是】，然后选择设备 【/dev/sda】，然后进一步安装</p></li>
+<li><p>安装完成 <img src="https://img-blog.csdnimg.cn/20200724114756577.png" /></p></li>
+<li><p>安装好VMware Tools：VMware菜单选择【虚拟机】，【安装Vmare Tools】,根据系统提示，登录虚拟机，home目录中，找到VMware Tools 光驱文件，复制到任意文件夹，使用tar -zxvf 文件名 解压；找到 vmware-install pl 文件并运行就ok了，根据提示一步步往下就行<img src="https://img-blog.csdnimg.cn/20200724120154931.png" /></p></li>
+<li><p>注意：新版kali 默认用户名和密码：kali kali</p></li>
+<li><p>最后建议一开始拍摄一下快照：【虚拟机】【快照】【拍摄快照】<br />
+<img src="https://img-blog.csdnimg.cn/2020072412202461.png" /> ## 最后 这样就可以畅玩kali啦</p></li>
 </ol>
 ]]></content>
       <categories>
@@ -88,24 +58,24 @@
   <entry>
     <title>利用Burpsuite爆破路由器管理员密码</title>
     <url>/2020/04/13/brute_router_passwd/</url>
-    <content><![CDATA[<p>之前家里网断了，找人来修，于是就升级了一下网络，并重新换了猫和路由器。但管理员密码我并不知道，但初始应该是弱口令，我想可以用字典爆破一下。<br><img src="https://img-blog.csdnimg.cn/20200413142129605.png" alt="在这里插入图片描述"></p>
+    <content><![CDATA[<p>之前家里网断了，找人来修，于是就升级了一下网络，并重新换了猫和路由器。但管理员密码我并不知道，但初始应该是弱口令，我想可以用字典爆破一下。 <img src="https://img-blog.csdnimg.cn/20200413142129605.png" alt="在这里插入图片描述" /></p>
 <span id="more"></span>
-
-<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>burpsuite、Chrome  </p>
-<h2 id="操作过程"><a href="#操作过程" class="headerlink" title="操作过程"></a>操作过程</h2><ol>
-<li>使用burpsuit的Proxy对路由器登录进行抓包(密码随便输就行了）<img src="https://img-blog.csdnimg.cn/20200413124928830.png" alt="在这里插入图片描述"></li>
-<li>很明显，密码在前端经过了加密，那我们不得不去查看前端加密的代码<img src="https://img-blog.csdnimg.cn/20200413125604303.png" alt="在这里插入图片描述"></li>
+<h2 id="工具">工具</h2>
+<p>burpsuite、Chrome<br />
+## 操作过程</p>
+<ol type="1">
+<li>使用burpsuit的Proxy对路由器登录进行抓包(密码随便输就行了）<img src="https://img-blog.csdnimg.cn/20200413124928830.png" alt="在这里插入图片描述" /></li>
+<li>很明显，密码在前端经过了加密，那我们不得不去查看前端加密的代码<img src="https://img-blog.csdnimg.cn/20200413125604303.png" alt="在这里插入图片描述" /></li>
 <li>每个厂家的路由器对密码加密方式都不一样，有的没有，我家的是tp-link,我猜这个厂家所有路由器管理员密码应该都是这样加密的8.这是关键代码：</li>
 </ol>
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="string">`securityEncode: function(a, b, c) &#123;</span></span><br><span class="line"><span class="string">           var e = &quot;&quot;, f, g, h, k, l = 187, n = 187;</span></span><br><span class="line"><span class="string">           g = a.length;</span></span><br><span class="line"><span class="string">           h = b.length;</span></span><br><span class="line"><span class="string">           k = c.length;</span></span><br><span class="line"><span class="string">           f = g &gt; h ? g : h;</span></span><br><span class="line"><span class="string">           for (var p = 0; p &lt; f; p++)</span></span><br><span class="line"><span class="string">               n = l = 187,</span></span><br><span class="line"><span class="string">               p &gt;= g ? n = b.charCodeAt(p) : p &gt;= h ? l = a.charCodeAt(p) : (l = a.charCodeAt(p),</span></span><br><span class="line"><span class="string">               n = b.charCodeAt(p)),</span></span><br><span class="line"><span class="string">               e += c.charAt((l ^ n) % k);</span></span><br><span class="line"><span class="string">           return e</span></span><br><span class="line"><span class="string">       &#125;,</span></span><br><span class="line"><span class="string">       orgAuthPwd: function(a) &#123;</span></span><br><span class="line"><span class="string">           return $.securityEncode(&quot;RDpbLfCPsJZ7fiv&quot;, a, &quot;yLwVl0zKqws7LgKPRQ84Mdt708T1qQ3Ha7xv3H7NyU84p21BriUWBU43odz3iP4rBL3cD02KZciXTysVXiV8ngg6vL48rPJyAUw0HurW20xqxv9aYb4M9wK1Ae0wlro510qXeU07kV57fQMc8L6aLgMLwygtc0F10a0Dg70TOoouyFhdysuRMO51yY5ZlOZZLEal1h0t9YQW0Ko7oBwmCAHoic4HYbUyVeU3sfQ1xtXcPcf1aT303wAQhv66qzW&quot;)</span></span><br><span class="line"><span class="string">       &#125;</span></span><br></pre></td></tr></table></figure>
-
-<ol start="5">
+<ol start="5" type="1">
 <li>明文字典是无法爆破的，所以我们可以将字典使用上面的代码进行加密，然后再进行爆破。这是参考上面的javascript写的python</li>
 </ol>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python3</span></span><br><span class="line">short = <span class="string">&quot;RDpbLfCPsJZ7fiv&quot;</span></span><br><span class="line">long = <span class="string">&#x27;yLwVl0zKqws7LgKPRQ84Mdt708T1qQ3Ha7xv3H7NyU84p21BriUWBU43odz3iP4rBL3cD02KZciXTysVXiV8ngg6vL48rPJyAUw0HurW20xqxv9aYb4M9wK1Ae0wlro510qXeU07kV57fQMc8L6aLgMLwygtc0F10a0Dg70TOoouyFhdysuRMO51yY5ZlOZZLEal1h0t9YQW0Ko7oBwmCAHoic4HYbUyVeU3sfQ1xtXcPcf1aT303wAQhv66qzW&#x27;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">passwd</span>(<span class="params">a, b, c</span>):</span></span><br><span class="line">	e = <span class="string">&#x27;&#x27;</span></span><br><span class="line">	f, g, h, k, l = <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span>, <span class="number">187</span></span><br><span class="line">	n = <span class="number">187</span></span><br><span class="line">	g = <span class="built_in">len</span>(a)</span><br><span class="line">	h = <span class="built_in">len</span>(b)</span><br><span class="line">	k = <span class="built_in">len</span>(c)</span><br><span class="line">	f = g <span class="keyword">if</span> g &gt; h <span class="keyword">else</span> h</span><br><span class="line">	<span class="keyword">for</span> p <span class="keyword">in</span> <span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">0</span>, f)):</span><br><span class="line">		n = l = <span class="number">187</span></span><br><span class="line">		<span class="keyword">if</span> p &gt;= g:</span><br><span class="line">			n = <span class="built_in">ord</span>(b[p])</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">if</span> p &gt;= h:</span><br><span class="line">				l = <span class="built_in">ord</span>(a[p])  <span class="comment">#ord()对应javascript中的charCodeAt()</span></span><br><span class="line">			<span class="keyword">else</span>:</span><br><span class="line">				l = <span class="built_in">ord</span>(a[p])</span><br><span class="line">				n = <span class="built_in">ord</span>(b[p])</span><br><span class="line">		e += c[(l ^ n) % k]</span><br><span class="line">	<span class="built_in">print</span>(e)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wordlist</span>():</span></span><br><span class="line">	f = <span class="built_in">open</span>(<span class="string">&quot;F:\\wordlist\\fuzzDicts-master\\routerDicts\\pass.txt&quot;</span>) <span class="comment">#字典的路径</span></span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> f.readlines():</span><br><span class="line">		passwd(short, line.rstrip(), long)</span><br><span class="line">	f.close()</span><br><span class="line">wordlist()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol start="6">
-<li>拿到密文字典之后，赶快放到burpsuite中爆破一下<br><img src="https://img-blog.csdnimg.cn/20200413140518324.png" alt="在这里插入图片描述"></li>
-<li>参考明文字典，得到的密码是123456，然后就可以成功登陆啦！<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>我们平时一定要有防备意识，尽量修改一下路由器管理员的初始密码，有想法的人一旦进入到你家的内网，后果很严重的。<br>其实字典爆破只能针对某些安全机制较低的路由器，大多路由器会限制你的登录次数，会认为是恶意登录，输满次数会让你重启路由器。所以运气不好，可能密码再简单，字典也没有用了，哈哈哈~<img src="https://img-blog.csdnimg.cn/20200413141836141.png" alt="在这里插入图片描述"></li>
+<ol start="6" type="1">
+<li>拿到密文字典之后，赶快放到burpsuite中爆破一下 <img src="https://img-blog.csdnimg.cn/20200413140518324.png" alt="在这里插入图片描述" /></li>
+<li>参考明文字典，得到的密码是123456，然后就可以成功登陆啦！ ## 总结 我们平时一定要有防备意识，尽量修改一下路由器管理员的初始密码，有想法的人一旦进入到你家的内网，后果很严重的。 其实字典爆破只能针对某些安全机制较低的路由器，大多路由器会限制你的登录次数，会认为是恶意登录，输满次数会让你重启路由器。所以运气不好，可能密码再简单，字典也没有用了，哈哈哈~<img src="https://img-blog.csdnimg.cn/20200413141836141.png" alt="在这里插入图片描述" /></li>
 </ol>
 ]]></content>
       <categories>
@@ -122,11 +92,18 @@
   <entry>
     <title>Kon-Boot绕过登录密码</title>
     <url>/2020/04/12/konboot/</url>
-    <content><![CDATA[<p>kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。<br>原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。</p>
-<span id="more"></span>
-<p>接下来 ，我就复现一下window下u盘启动的方式<br>工具：Kon-Boot+2.7<br>平台：虚拟机win10</p>
-<p>首先得下载kon-boot 工具，但这是个收费软件，可以找破解版的<br>1.然后制作一个u盘启动盘，打开文件<br><img src="https://img-blog.csdnimg.cn/20200412034856586.png" alt="在这里插入图片描述"><br>2.直接双击运行vbs脚本文件 (Win7操作系统需要以管理员运行运行下面的批处理文件，其他系统不必<br><img src="https://img-blog.csdnimg.cn/20200412034925494.png" alt="在这里插入图片描述"><br>3.对着接下来的弹窗点确定即可。<br><img src="https://img-blog.csdnimg.cn/20200412035057418.png" alt="在这里插入图片描述">4.这样说明ok了<br><img src="https://img-blog.csdnimg.cn/20200412025011163.png" alt="在这里插入图片描述"><br>5.图中的应用程序，可以在计算机进入登陆界面时，检验操作系统，弹出绕过方案<br><img src="https://img-blog.csdnimg.cn/20200412025029728.png" alt="在这里插入图片描述">6.我在Boot Manager 中没有找到有 EFI USB Device U盘确实插上了(我第一次测试是看到的  然后会出现首次的加载界面 后面再测试就没有了)    在这之前我们需要关闭电脑的Secure Boot<br><img src="https://img-blog.csdnimg.cn/20200412025040999.png" alt="在这里插入图片描述">7.手动从u盘中导入<br><img src="https://img-blog.csdnimg.cn/2020041202512637.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025134416.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025139540.png" alt="在这里插入图片描述">8.到达登陆界面时直接回车，是可以直接登录的，如果一次不行可以多试几次<br><img src="https://img-blog.csdnimg.cn/20200412025308472.png" alt="在这里插入图片描述"><img src="https://img-blog.csdnimg.cn/20200412025312451.png" alt="在这里插入图片描述"></p>
-<p>9.但也可以使用快捷键 五次shift 可以弹出管理员控制台！不仅仅可以直接修改密码……<br><img src="https://img-blog.csdnimg.cn/20200412025324267.png" alt="在这里插入图片描述"><br>可见，kon-boot确实是很霸道的。<br>面对它的威胁，我们要有防范意识，比如在BIOS中禁用USB引导以及其他引导方式；  其次思想上应该端正自己，毕竟一念天堂，一念监狱啊，也不要尝试去恶搞一下舍友哦！<br><img src="https://img-blog.csdnimg.cn/20200412035306484.png" alt="在这里插入图片描述" style="zoom:50%;" /></p>
+    <content><![CDATA[<p>kon-boot 是一个登录密码破解工具，能绕过操作系统的身份验证过程。<br />
+原理是处理BIOS修改系统内核的引导处理，跳过SAM的检查，直接登陆系统。 <span id="more"></span> 接下来 ，我就复现一下window下u盘启动的方式 工具：Kon-Boot+2.7<br />
+平台：虚拟机win10</p>
+<p>首先得下载kon-boot 工具，但这是个收费软件，可以找破解版的<br />
+1.然后制作一个u盘启动盘，打开文件<br />
+<img src="https://img-blog.csdnimg.cn/20200412034856586.png" alt="在这里插入图片描述" /> 2.直接双击运行vbs脚本文件 (Win7操作系统需要以管理员运行运行下面的批处理文件，其他系统不必 <img src="https://img-blog.csdnimg.cn/20200412034925494.png" alt="在这里插入图片描述" /> 3.对着接下来的弹窗点确定即可。 <img src="https://img-blog.csdnimg.cn/20200412035057418.png" alt="在这里插入图片描述" />4.这样说明ok了<br />
+<img src="https://img-blog.csdnimg.cn/20200412025011163.png" alt="在这里插入图片描述" /> 5.图中的应用程序，可以在计算机进入登陆界面时，检验操作系统，弹出绕过方案<br />
+<img src="https://img-blog.csdnimg.cn/20200412025029728.png" alt="在这里插入图片描述" />6.我在Boot Manager 中没有找到有 EFI USB Device U盘确实插上了(我第一次测试是看到的 然后会出现首次的加载界面 后面再测试就没有了) 在这之前我们需要关闭电脑的Secure Boot <img src="https://img-blog.csdnimg.cn/20200412025040999.png" alt="在这里插入图片描述" />7.手动从u盘中导入<br />
+<img src="https://img-blog.csdnimg.cn/2020041202512637.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025134416.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025139540.png" alt="在这里插入图片描述" />8.到达登陆界面时直接回车，是可以直接登录的，如果一次不行可以多试几次 <img src="https://img-blog.csdnimg.cn/20200412025308472.png" alt="在这里插入图片描述" /><img src="https://img-blog.csdnimg.cn/20200412025312451.png" alt="在这里插入图片描述" /></p>
+<p>9.但也可以使用快捷键 五次shift 可以弹出管理员控制台！不仅仅可以直接修改密码…… <img src="https://img-blog.csdnimg.cn/20200412025324267.png" alt="在这里插入图片描述" /> 可见，kon-boot确实是很霸道的。<br />
+面对它的威胁，我们要有防范意识，比如在BIOS中禁用USB引导以及其他引导方式； 其次思想上应该端正自己，毕竟一念天堂，一念监狱啊，也不要尝试去恶搞一下舍友哦！<br />
+<img src="https://img-blog.csdnimg.cn/20200412035306484.png" alt="在这里插入图片描述" style="zoom:50%;" /></p>
 ]]></content>
       <categories>
         <category>Window破解</category>
@@ -141,11 +118,13 @@
   <entry>
     <title>使用Turtle库绘制图像----哆啦A梦</title>
     <url>/2020/05/21/%E5%93%86%E5%95%A6A%E6%A2%A6/</url>
-    <content><![CDATA[<p>Turtle库是Python中的一个绘图的函数库。<br>老师布置的作业，让我们设计图像<br>呜呜呜~好难过。。<br>方法都很简单，基本都是一样的步骤，但细节处理起来很浪费时间。<br>下面是我算是花了点时间的，我个人觉得还不错（不，完美，无可挑剔，哈哈哈哈）<br>贴一下代码,记录一下我的劳动成果</p>
+    <content><![CDATA[<p>Turtle库是Python中的一个绘图的函数库。 老师布置的作业，让我们设计图像 呜呜呜~好难过。。 方法都很简单，基本都是一样的步骤，但细节处理起来很浪费时间。 下面是我算是花了点时间的，我个人觉得还不错（不，完美，无可挑剔，哈哈哈哈） 贴一下代码,记录一下我的劳动成果</p>
 <span id="more"></span>
-<h2 id="代码展示"><a href="#代码展示" class="headerlink" title="代码展示"></a>代码展示</h2><p>贴一下代码,记录一下我的劳动成果</p>
+<h2 id="代码展示">代码展示</h2>
+<p>贴一下代码,记录一下我的劳动成果</p>
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> turtle <span class="keyword">as</span> t</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初始化</span></span><br><span class="line">screen = t.Screen()</span><br><span class="line">width, height = <span class="number">700</span>, <span class="number">700</span></span><br><span class="line">screen.setup(width, height)</span><br><span class="line">t.bgcolor(<span class="string">&#x27;#FEFFEF&#x27;</span>)</span><br><span class="line">screen.title(<span class="string">&#x27;哆啦A梦&#x27;</span>)</span><br><span class="line">t.speed(<span class="number">10</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">skip</span>(<span class="params">x, y</span>):</span></span><br><span class="line">	t.penup()</span><br><span class="line">	t.goto(x, y)</span><br><span class="line">	t.pendown()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改坐标</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">setxy</span>():</span></span><br><span class="line">	t.setworldcoordinates(<span class="number">0</span>, -<span class="number">700</span>, <span class="number">700</span>, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">broad</span>():</span></span><br><span class="line">	<span class="comment"># 头</span></span><br><span class="line">	skip(<span class="number">368</span>, -<span class="number">352</span>)</span><br><span class="line">	t.seth(<span class="number">15</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#02A0E9&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">160</span>, <span class="number">285</span>)</span><br><span class="line"></span><br><span class="line">	(x1, y1) = t.pos()  <span class="comment"># 项链起点</span></span><br><span class="line"></span><br><span class="line">	<span class="comment"># 身体</span></span><br><span class="line">	t.seth(<span class="number">119</span>)</span><br><span class="line">	t.circle(-<span class="number">160</span>, <span class="number">15</span>)</span><br><span class="line">	t.seth(<span class="number">140</span>)</span><br><span class="line">	t.forward(<span class="number">44</span>)</span><br><span class="line">	t.seth(-<span class="number">95</span>)</span><br><span class="line">	(x2, y2) = t.pos()  <span class="comment"># 左手起点 t.circle(30)</span></span><br><span class="line">	t.circle(-<span class="number">30</span>, <span class="number">90</span>)</span><br><span class="line">	t.seth(-<span class="number">75</span>)</span><br><span class="line">	t.circle(<span class="number">250</span>, <span class="number">23</span>)</span><br><span class="line">	(x3, y3) = t.pos()  <span class="comment"># 左边线条</span></span><br><span class="line">	t.seth(-<span class="number">115</span>)</span><br><span class="line">	t.circle(<span class="number">500</span>, <span class="number">7</span>)</span><br><span class="line">	t.seth(<span class="number">90</span>)</span><br><span class="line">	t.circle(<span class="number">10</span>, <span class="number">170</span>)</span><br><span class="line">	(x4, y4) = t.pos()  <span class="comment"># 左脚起点</span></span><br><span class="line">	t.seth(-<span class="number">75</span>)</span><br><span class="line">	t.circle(-<span class="number">180</span>, <span class="number">34</span>)</span><br><span class="line">	t.seth(-<span class="number">1</span>)</span><br><span class="line">	t.circle(-<span class="number">180</span>, <span class="number">45</span>)</span><br><span class="line">	t.circle(<span class="number">200</span>, <span class="number">25</span>)</span><br><span class="line">	(x5, y5) = t.pos()  <span class="comment"># 右脚起点</span></span><br><span class="line">	t.seth(<span class="number">1</span>)</span><br><span class="line">	t.circle(<span class="number">50</span>, <span class="number">125</span>)</span><br><span class="line">	t.seth(<span class="number">110</span>)</span><br><span class="line">	t.forward(<span class="number">8</span>)</span><br><span class="line">	t.seth(<span class="number">65</span>)</span><br><span class="line">	t.circle(<span class="number">250</span>, <span class="number">15</span>)</span><br><span class="line">	t.seth(-<span class="number">2</span>)</span><br><span class="line">	t.circle(-<span class="number">100</span>, <span class="number">40</span>)</span><br><span class="line">	(x6, y6) = t.pos()  <span class="comment"># 右手起点</span></span><br><span class="line">	t.seth(<span class="number">100</span>)</span><br><span class="line">	t.circle(-<span class="number">40</span>, <span class="number">90</span>)</span><br><span class="line">	t.seth(<span class="number">128</span>)</span><br><span class="line">	t.circle(<span class="number">155</span>, <span class="number">45</span>)</span><br><span class="line">	t.seth(-<span class="number">3</span>)</span><br><span class="line">	t.forward(<span class="number">18</span>)</span><br><span class="line">	t.circle(<span class="number">5</span>, <span class="number">190</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 项链</span></span><br><span class="line">	skip(x1, y1)</span><br><span class="line">	t.seth(<span class="number">180</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#DF0121&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">8</span>, <span class="number">180</span>)</span><br><span class="line">	t.seth(-<span class="number">23</span>)</span><br><span class="line">	t.forward(<span class="number">15</span>)</span><br><span class="line">	(x10, y10) = t.pos()</span><br><span class="line">	t.forward(<span class="number">40</span>)</span><br><span class="line">	(x7, y7) = t.pos()  <span class="comment"># 铃铛起点</span></span><br><span class="line">	t.seth(-<span class="number">23</span>)</span><br><span class="line">	t.forward(<span class="number">120</span>)</span><br><span class="line">	t.seth(-<span class="number">3</span>)</span><br><span class="line">	t.forward(<span class="number">20</span>)</span><br><span class="line">	t.circle(<span class="number">6</span>, <span class="number">190</span>)</span><br><span class="line">	t.seth(<span class="number">157</span>)</span><br><span class="line">	t.forward(<span class="number">187</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 口袋</span></span><br><span class="line">	skip(x10, y10)</span><br><span class="line">	t.seth(-<span class="number">150</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">90</span>, <span class="number">255</span>)</span><br><span class="line">	t.seth(<span class="number">158</span>)</span><br><span class="line">	t.forward(<span class="number">130</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">180</span>, -<span class="number">350</span>)</span><br><span class="line">	t.seth(-<span class="number">18</span>)</span><br><span class="line">	t.circle(-<span class="number">500</span>, <span class="number">17</span>)</span><br><span class="line">	t.seth(-<span class="number">120</span>)</span><br><span class="line">	t.circle(-<span class="number">65</span>, <span class="number">95</span>)</span><br><span class="line">	t.seth(<span class="number">158</span>)</span><br><span class="line">	t.circle(-<span class="number">65</span>, <span class="number">95</span>)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 铃铛</span></span><br><span class="line">	skip(x7, y7)</span><br><span class="line">	t.seth(-<span class="number">130</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#F4E844&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">2</span>)</span><br><span class="line">	t.seth(<span class="number">157</span>)</span><br><span class="line">	t.circle(<span class="number">3</span>, <span class="number">180</span>)</span><br><span class="line">	(x8, y8) = t.pos()  <span class="comment"># 铃铛2起点</span></span><br><span class="line">	t.seth(-<span class="number">10</span>)</span><br><span class="line">	t.circle(-<span class="number">80</span>, <span class="number">30</span>)</span><br><span class="line">	t.seth(<span class="number">25</span>)</span><br><span class="line">	t.circle(<span class="number">5</span>, <span class="number">120</span>)</span><br><span class="line">	t.seth(<span class="number">140</span>)</span><br><span class="line">	t.circle(<span class="number">72</span>, <span class="number">35</span>)</span><br><span class="line">	t.seth(<span class="number">35</span>)</span><br><span class="line">	t.circle(-<span class="number">27</span>, <span class="number">119</span>)</span><br><span class="line">	t.seth(<span class="number">140</span>)</span><br><span class="line">	t.circle(<span class="number">70</span>, <span class="number">30</span>)</span><br><span class="line">	skip(x8, y8)</span><br><span class="line">	t.seth(-<span class="number">130</span>)</span><br><span class="line">	t.circle(<span class="number">23</span>, <span class="number">100</span>)</span><br><span class="line">	(x9, y9) = t.pos()  <span class="comment"># 铃铛3起点</span></span><br><span class="line">	t.seth(-<span class="number">23</span>)</span><br><span class="line">	t.circle(<span class="number">23</span>, <span class="number">105</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line">	skip(x9, y9)</span><br><span class="line">	t.seth(<span class="number">60</span>)</span><br><span class="line">	t.forward(<span class="number">10</span>)</span><br><span class="line">	t.seth(-<span class="number">23</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#7A6752&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">6</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 左手</span></span><br><span class="line">	skip(x2, y2)</span><br><span class="line">	t.seth(-<span class="number">95</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(-<span class="number">35</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 左脚</span></span><br><span class="line">	skip(x4, y4)</span><br><span class="line">	t.seth(<span class="number">90</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">40</span>, <span class="number">130</span>)</span><br><span class="line">	t.seth(<span class="number">240</span>)</span><br><span class="line">	t.circle(<span class="number">150</span>, <span class="number">40</span>)</span><br><span class="line">	t.circle(<span class="number">53</span>, <span class="number">113</span>)</span><br><span class="line">	t.seth(<span class="number">70</span>)</span><br><span class="line">	t.circle(<span class="number">180</span>, <span class="number">34</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 右脚</span></span><br><span class="line">	skip(x5, y5)</span><br><span class="line">	t.seth(-<span class="number">90</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">40</span>, <span class="number">130</span>)</span><br><span class="line">	t.seth(<span class="number">50</span>)</span><br><span class="line">	t.circle(<span class="number">120</span>, <span class="number">50</span>)</span><br><span class="line">	t.circle(<span class="number">32</span>, <span class="number">125</span>)</span><br><span class="line">	t.seth(-<span class="number">60</span>)</span><br><span class="line">	t.forward(<span class="number">20</span>)</span><br><span class="line">	t.seth(-<span class="number">80</span>)</span><br><span class="line">	t.circle(-<span class="number">57</span>, <span class="number">100</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 右手</span></span><br><span class="line">	skip(x6, y6)</span><br><span class="line">	t.seth(-<span class="number">60</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">35</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 脸</span></span><br><span class="line">	skip(x1, y1)</span><br><span class="line">	t.seth(<span class="number">120</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(-<span class="number">160</span>, <span class="number">30</span>)</span><br><span class="line">	t.circle(-<span class="number">100</span>, <span class="number">90</span>)</span><br><span class="line">	(x12, y12) = t.pos()  <span class="comment"># 左眼角的坐标</span></span><br><span class="line">	t.seth(<span class="number">65</span>)</span><br><span class="line">	t.circle(-<span class="number">80</span>, <span class="number">30</span>)</span><br><span class="line">	t.seth(<span class="number">50</span>)</span><br><span class="line">	t.circle(-<span class="number">27</span>, <span class="number">140</span>)</span><br><span class="line">	t.seth(-<span class="number">85</span>)</span><br><span class="line">	t.circle(-<span class="number">80</span>, <span class="number">30</span>)</span><br><span class="line">	t.seth(<span class="number">70</span>)</span><br><span class="line">	t.circle(-<span class="number">80</span>, <span class="number">30</span>)</span><br><span class="line">	t.seth(<span class="number">50</span>)</span><br><span class="line">	t.circle(-<span class="number">27</span>, <span class="number">140</span>)</span><br><span class="line">	t.seth(-<span class="number">85</span>)</span><br><span class="line">	t.circle(-<span class="number">80</span>, <span class="number">30</span>)</span><br><span class="line">	<span class="comment"># (x13,y13)=t.pos()  #右眼角的坐标</span></span><br><span class="line">	t.seth(-<span class="number">10</span>)</span><br><span class="line">	t.circle(-<span class="number">70</span>, <span class="number">100</span>)</span><br><span class="line">	t.seth(-<span class="number">105</span>)</span><br><span class="line">	t.circle(-<span class="number">150</span>, <span class="number">60</span>)</span><br><span class="line">	t.seth(<span class="number">156</span>)</span><br><span class="line">	t.forward(<span class="number">173</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line">	<span class="comment"># 眼睛</span></span><br><span class="line">	skip(x12, y12)</span><br><span class="line">	t.seth(-<span class="number">120</span>)</span><br><span class="line">	t.circle(<span class="number">35</span>, <span class="number">170</span>)</span><br><span class="line">	t.circle(<span class="number">80</span>, <span class="number">15</span>)</span><br><span class="line">	t.seth(-<span class="number">118</span>)</span><br><span class="line">	t.circle(<span class="number">35</span>, <span class="number">170</span>)</span><br><span class="line">	t.circle(<span class="number">80</span>, <span class="number">10</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">315</span>, -<span class="number">110</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#060608&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">7</span>, <span class="number">180</span>)</span><br><span class="line">	t.seth(-<span class="number">125</span>)</span><br><span class="line">	t.circle(<span class="number">30</span>, <span class="number">50</span>)</span><br><span class="line">	t.circle(<span class="number">7</span>, <span class="number">180</span>)</span><br><span class="line">	t.seth(<span class="number">60</span>)</span><br><span class="line">	t.circle(<span class="number">30</span>, <span class="number">50</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line">	skip(<span class="number">313</span>, -<span class="number">115</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">6</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">345</span>, -<span class="number">130</span>)</span><br><span class="line">	t.seth(<span class="number">50</span>)</span><br><span class="line">	t.circle(-<span class="number">20</span>, <span class="number">180</span>)</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 鼻子</span></span><br><span class="line">	skip(<span class="number">310</span>, -<span class="number">180</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#DB0220&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.seth(-<span class="number">20</span>)</span><br><span class="line">	t.circle(<span class="number">20</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	t.seth(-<span class="number">120</span>)</span><br><span class="line">	t.forward(<span class="number">25</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">310</span>, -<span class="number">148</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#FFFFFF&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.circle(<span class="number">7</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 嘴巴</span></span><br><span class="line">	skip(<span class="number">205</span>, -<span class="number">160</span>)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#DF022A&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.seth(-<span class="number">90</span>)</span><br><span class="line">	t.circle(<span class="number">200</span>, <span class="number">20</span>)</span><br><span class="line">	(x14, y14) = t.pos()  <span class="comment"># 舌头起点</span></span><br><span class="line">	t.seth(-<span class="number">83</span>)</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line"></span><br><span class="line">	t.seth(-<span class="number">20</span>)</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line">	t.circle(<span class="number">150</span>, <span class="number">30</span>)</span><br><span class="line">	t.circle(<span class="number">5</span>, <span class="number">120</span>)</span><br><span class="line">	t.seth(<span class="number">171</span>)</span><br><span class="line">	t.circle(-<span class="number">500</span>, <span class="number">23</span>)</span><br><span class="line">	t.seth(-<span class="number">150</span>)</span><br><span class="line">	t.circle(<span class="number">5</span>, <span class="number">100</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 舌头</span></span><br><span class="line">	skip(x14, y14)</span><br><span class="line">	t.fillcolor(<span class="string">&#x27;#EC7A1A&#x27;</span>)</span><br><span class="line">	t.begin_fill()</span><br><span class="line">	t.seth(-<span class="number">83</span>)</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line">	t.seth(-<span class="number">20</span>)</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">50</span>)</span><br><span class="line">	t.seth(<span class="number">115</span>)</span><br><span class="line">	t.circle(<span class="number">100</span>, <span class="number">85</span>)</span><br><span class="line">	t.end_fill()</span><br><span class="line"></span><br><span class="line">	<span class="comment"># 胡子</span></span><br><span class="line">	skip(<span class="number">260</span>, -<span class="number">170</span>)</span><br><span class="line">	t.seth(<span class="number">155</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">265</span>, -<span class="number">162</span>)</span><br><span class="line">	t.seth(<span class="number">140</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">265</span>, -<span class="number">155</span>)</span><br><span class="line">	t.seth(<span class="number">130</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">350</span>, -<span class="number">180</span>)</span><br><span class="line">	t.seth(-<span class="number">5</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">350</span>, -<span class="number">189</span>)</span><br><span class="line">	t.seth(-<span class="number">10</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">	skip(<span class="number">350</span>, -<span class="number">197</span>)</span><br><span class="line">	t.seth(-<span class="number">15</span>)</span><br><span class="line">	t.forward(<span class="number">100</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">main</span>():</span></span><br><span class="line">	setxy()</span><br><span class="line">	broad()</span><br><span class="line">	t.hideturtle()</span><br><span class="line">	t.mainloop()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">	main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<h2 id="绘制成果"><a href="#绘制成果" class="headerlink" title="绘制成果"></a>绘制成果</h2><p>是不是很像啊哈哈哈<br><img src="https://img-blog.csdnimg.cn/20200521185343699.png"></p>
+<h2 id="绘制成果">绘制成果</h2>
+<p>是不是很像啊哈哈哈 <img src="https://img-blog.csdnimg.cn/20200521185343699.png" /></p>
 ]]></content>
       <categories>
         <category>Python编程</category>
@@ -158,16 +137,117 @@
       </tags>
   </entry>
   <entry>
+    <title>考研资料：数学公式</title>
+    <url>/2021/06/23/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
+    <content><![CDATA[<p>考研必须记住的数学公式！ <span id="more"></span> ## 常见的等价无穷小</p>
+<p><strong>x的一阶无穷小</strong> <span class="math display">\[
+x\sim\sin x\sim\tan x\sim\arcsin x\sim\arctan x\sim\ln(1+x)\sim e^x-1\\a^x-1\sim x\ln a\\\sqrt[n]{1+x}-1\sim \frac 1nx\\
+(1+x)^a-1\sim ax
+\]</span></p>
+<p><strong>x的二阶无穷小</strong></p>
+<p>​<br />
+<span class="math display">\[
+1-\cos x\sim \frac 12x^2\quad\implies\quad1-(\cos x)^n\sim \frac n2x^2\\
+\ln (1+x)-x\sim -\frac 12x^2\\
+e^x-1-x\sim \frac 12x^2
+\]</span> <strong>x的三阶无穷小</strong> <span class="math display">\[
+\sin x-x\sim -\frac 16x^3 \quad\iff\quad \arcsin x -x\sim \frac 16x^3\\
+\tan x-x\sim \frac13x^3\quad\iff\quad \arctan x-x\sim -\frac13x^3\\
+\tan x-\sin x\sim \frac 12x^3
+\]</span></p>
+<h2 id="常见的泰勒公式">常见的泰勒公式</h2>
+<p><span class="math display">\[
+e^x = 1+\frac{x}{1!}+\frac{x^2}{2!}+\cdots+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\sin x=x-\frac{1}{3!}x^3+\frac{1}{5!}x^5-\cdots+(-1)^n\frac{1}{(2n+1)!}x^{2n+1}+o(x^{2n+2})\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4-\cdots+(-1)^n\frac{1}{(2n)!}x^{2n}+o(x^{2n+1})\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+ln(1+x)=x-\frac{1}{2}x^2+\frac{1}{3}x^3-\cdots+(-1)^{n-1}\frac{1}{n}x^{n}+o(x^{n})\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+(1+x)^m=1+mx+\frac{m(m-1)}{2!}x^2+\cdots+\frac{m(m-1)\cdots(m-n+1)}{n!}x^n+o(x^n)
+\]</span></p>
+<p><span class="math display">\[
+\frac{1}{1-x}=1+x+x^2+x^3+\cdots+x^n+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\frac{1}{1+x}=1-x+x^2-x^3+\cdots+(-1)^nx^n+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\tan x=x+\frac{x^3}{3}+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\arctan x=x-\frac{x^3}{3}+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<p><span class="math display">\[
+\arcsin x=x+\frac{1}{3!}x^3+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad
+\]</span></p>
+<h2 id="等差数列">等差数列</h2>
+<h3 id="一般定义">一般定义</h3>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/0430ad02fe78295da19dddfc4722fbcd.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<h2 id="等比数列">等比数列</h2>
+<h3 id="通项公式">通项公式</h3>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/1b6ded94ad9a90fad17a2ee8b9c5d071.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/dadfdcdd5bfb3859c3975d404111083c.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<h3 id="推广式">推广式</h3>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/dadfdcdd5bfb3859c3975d404111083c.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<h3 id="求和公式">求和公式</h3>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/0224b1630bb4efb692f7e4cf32902998.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/d4f111ae1c48bb57106711c323bdf46d.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/445748b49d85232a0bd9597db6ae6d4d.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<h3 id="求和公式推导">求和公式推导</h3>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/0173f59acdeebf08dcd18bd3cd0b3fe9.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/4410a0fe031e2e5999ca8bca3d736883.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/0ced12f94363da40e3884d1af8a7243e.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/eb47b9df32a9c23a2d15440689fbc21c.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+<figure>
+<img src="https://bkimg.cdn.bcebos.com/formula/e6b6944558aa88d626c165fb4822b912.svg" alt="" /><figcaption>img</figcaption>
+</figure>
+]]></content>
+      <categories>
+        <category>考研资料</category>
+      </categories>
+      <tags>
+        <tag>数学公式</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>网络信息对抗笔记</title>
     <url>/2021/05/12/%E7%BD%91%E7%BB%9C%E5%AF%B9%E6%8A%97/</url>
-    <content><![CDATA[<p>保佑今天下午的网络信息对抗考试稳过！！！</p>
-<span id="more"></span>
-
-<h1 id="第一讲"><a href="#第一讲" class="headerlink" title="第一讲"></a>第一讲</h1><p><strong>网络对抗：</strong>在信息网络环境中，以信息网络系统为载体，以计算机或计算机网络为目标，围绕信息侦察、信息干扰、信息欺骗、信息攻（反）击，为争夺信息优势而进行的活动的总称。</p>
+    <content><![CDATA[<p>保佑今天下午的网络信息对抗考试稳过！！！ <span id="more"></span></p>
+<h1 id="第一讲">第一讲</h1>
+<p><strong>网络对抗：</strong>在信息网络环境中，以信息网络系统为载体，以计算机或计算机网络为目标，围绕信息侦察、信息干扰、信息欺骗、信息攻（反）击，为争夺信息优势而进行的活动的总称。</p>
 <p><strong>信息战：</strong>阻止、利用、扰乱或破坏敌方的信息及功能，保护已方军事信息和功能不受这些活动的影响并加以利用而采用的所有行动。换句话说，就是对敌方进行这些活动，而限制敌方进行这些活动。</p>
 <p><strong>网络中心战：</strong>将分布在广阔区域与空间内的所有侦察探测系统、通信联络系统、指挥控制系统（指挥中心）和武器系统组成一个以计算机为中心的信息网络体系，对不同性质和肩负不同任务的联合作战部队实现网络化无缝连接，对来自各种信息源的数据进行综合、分析、相关、识别和融合，得出战场态势和战术图象，传递给指挥中心和各种作战平台，达到信息共享，各级作战人员利用该网络体系交流作战信息，并使上级的作战命令在指挥员和武器平台之间快速传递，在指挥中心的统一协调和指挥下，各作战部队能进行最佳协同，高效、快速地遂行联合作战行动。</p>
-<h1 id="第二讲"><a href="#第二讲" class="headerlink" title="第二讲"></a>第二讲</h1><p><strong>1、TCP/IP协议栈安全问题的主要根源是什么</strong></p>
-<p>​    TCP/IP协议栈中各层都有自己的协议。由于这些协议在开发之初并未重点考虑安全因素，缺乏必要的安全机制。</p>
+<h1 id="第二讲">第二讲</h1>
+<p><strong>1、TCP/IP协议栈安全问题的主要根源是什么</strong></p>
+<p>​ TCP/IP协议栈中各层都有自己的协议。由于这些协议在开发之初并未重点考虑安全因素，缺乏必要的安全机制。</p>
 <p><strong>在TCP/IP协议栈中，绝大多数协议没有提供必要的安全机制，例如：</strong></p>
 <ul>
 <li>不提供认证服务</li>
@@ -176,48 +256,42 @@
 <li>不保证可用性——服务质量（QoS）</li>
 </ul>
 <p><strong>Smurf攻击</strong>通过使用将回复地址设置成受害网络的广播地址的ICMP应答请求(ping)数据包，来淹没受害主机，最终导致该网络的所有主机都对此ICMP应答请求做出答复，导致网络阻塞。更加复杂的Smurf将源地址改为第三方的受害者，最终导致第三方崩溃。</p>
-<h1 id="第三讲"><a href="#第三讲" class="headerlink" title="第三讲"></a>第三讲</h1><p><strong>TCP/IP协议栈指纹</strong></p>
-<p><strong>定义：</strong>TCP/IP协议栈指纹是指各种操作系统在实现TCP/IP协议族的时候,在遵循TCP/IP协议标准的同时，使用了不同的或者独有的协议内            容(各厂商自行规定).</p>
+<h1 id="第三讲">第三讲</h1>
+<p><strong>TCP/IP协议栈指纹</strong></p>
+<p><strong>定义：</strong>TCP/IP协议栈指纹是指各种操作系统在实现TCP/IP协议族的时候,在遵循TCP/IP协议标准的同时，使用了不同的或者独有的协议内 容(各厂商自行规定).</p>
 <ul>
 <li>根据OS在TCP/IP协议栈实现上的不同特点，通过其对各种探测的响应规律形成识别指纹，进而识别目标主机运行的操作系统。</li>
-<li>向开放的端口发送服务请求，确定端口提供的服务类型  </li>
-<li>不同操作系统的TCP/IP协议有不同的响应特征，据此可以判断OS类型<br>–FIN 响应特征<br>–BOGUS 响应特征（未定义的TCP标记）<br>–TCP ISN 初始化特征（序号起始值）<br>–TCP 连接初始化窗口大小<br>–TCP/IP协议栈指纹</li>
+<li>向开放的端口发送服务请求，确定端口提供的服务类型<br />
+</li>
+<li>不同操作系统的TCP/IP协议有不同的响应特征，据此可以判断OS类型 –FIN 响应特征 –BOGUS 响应特征（未定义的TCP标记） –TCP ISN 初始化特征（序号起始值） –TCP 连接初始化窗口大小 –TCP/IP协议栈指纹</li>
 </ul>
 <p><strong>操作系统识别技术</strong></p>
-<p>操作系统识别一般有两种形式，一种是简单的根据ttl 的值来做判断，另一种是根据截获的计算机通信特征和已有的特征库做对比，然后做<br>判断。在识别的过程中也分两种形式，一种是主动探测，一种是被动探测。主动探测是主动向目标发送请求做的判断，被动探测是拦截通信的数据包，然后根据数据包的特征来做判断。</p>
+<p>操作系统识别一般有两种形式，一种是简单的根据ttl 的值来做判断，另一种是根据截获的计算机通信特征和已有的特征库做对比，然后做 判断。在识别的过程中也分两种形式，一种是主动探测，一种是被动探测。主动探测是主动向目标发送请求做的判断，被动探测是拦截通信的数据包，然后根据数据包的特征来做判断。</p>
 <p>有哪些方式：</p>
 <ul>
-<li><p>利用TeInet、FTP 识别操作系统  </p>
-</li>
-<li><p>利用特定端口识别操作系统  </p>
-</li>
-</ul>
-<ul>
-<li>利用Ping识别操作系统  </li>
-</ul>
-<ul>
+<li><p>利用TeInet、FTP 识别操作系统</p></li>
+<li><p>利用特定端口识别操作系统</p></li>
+<li><p>利用Ping识别操作系统</p></li>
 <li><p>TCP/IP协议栈指纹</p>
 <p>主动扫描</p>
 <p><strong>主动协议识别技术是向目标主机发送多种信息包，然后通过检测目标主机响应这些信息包的方式来判断对方OS的类。</strong></p>
 <p>优点：主动扫描具有速度快、可靠性高等优点，但同样严重依赖于目标系统网络拓扑结构和过滤规则。</p>
-<ol>
-<li>标志提取<br>.Telnet<br>. Dns信息</li>
-<li>TCP/IP协议栈指纹<br>通过不同的实现辨别不同的操作系统。<br>. FIN<br>.TCP ISN<br>.不分片位<br>. TCP初始窗<br>. ACK值<br>. ICMP错误消息抑制<br>. ICMP消息引用<br>. ICMP错误消息回射完整性<br>. 服务类型<br>. 分片处理方式<br>. TCP 选项</li>
+<ol type="1">
+<li>标志提取 .Telnet . Dns信息</li>
+<li>TCP/IP协议栈指纹 通过不同的实现辨别不同的操作系统。 . FIN .TCP ISN .不分片位<br />
+. TCP初始窗 . ACK值 . ICMP错误消息抑制 . ICMP消息引用 . ICMP错误消息回射完整性 . 服务类型 . 分片处理方式 . TCP 选项</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">–FIN探测：发送一个FIN包给一个打开的端口，一般的行为是不响应，但某些实现例如MS Windows, BSDI,CISCO,HP&#x2F;UX,MVS,和  	 IRIX 发回一个RESET。</span><br><span class="line">–BOGUS标记探测：设置一个未定义的TCP &quot;标记&quot;（64或128）在SYN包的TCP头里。Linux机器到2.0.35之前在回应中</span><br><span class="line">	保持这个标记。</span><br><span class="line">–TCP ISN 取样：找出当响应一个连接请求时由TCP 实现所选择的初始化序列数式样。这可分为许多组例如传统的64K（许多老UNIX机	器），随机增量（新版本的Solaris，IRIX，FreeBSD，Digital UNIX，Cray，等），真“随机”（Linux 2.0.*，OpenVMS,     新的AIX,等），Windows 机器（和一些其他的）用一个“时间相关”模型，每过一段时间ISN就被加上一个小的固定数。</span><br><span class="line">–不分段指示位：许多操作系统开始在送出的一些包中设置IP的&quot;Don&#39;t Fragment&quot;位。</span><br><span class="line">–TCP初始化窗口值：检查返回包的窗口大小。如queso和nmap保持对窗口的精确跟踪因为它对于特定OS基本是常数。</span><br><span class="line">–ACK值：不同实现中一些情况下ACK域的值是不同的。例如，如果你送了一个FIN|PSH|URG 到一个关闭的TCP 端口。大多数实现会设置  	ACK为你的初始序列数，而Windows 会送给你序列数加1 。</span><br><span class="line">–ICMP错误信息终结：一些操作系统限制各种错误信息的发送率。例如，Linux 内核限制目的不可达消息的生成每4 秒钟最多80个。测试 	的一种办法是发一串包到一些随机的高UDP端口并计数收到的不可达消息。</span><br><span class="line">–ICMP消息引用：ICMP错误消息中可以引用一部分引起错误的源消息。对一个端口不可达消息，几乎所有实现只送回IP请求头外加8个字	节。然而Solaris 送回的稍多，而Linux 更多。</span><br><span class="line">–SYN洪泛限度：如果收到过多的伪造SYN数据包，一些操作系统会停止新的连接尝试。许多操作系统只能处理8 个包。</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
 <p>被动扫描</p>
-<p><strong>被动协议识别技术是用嗅探目标主机上的通信的方式来代替主动查询目标主机。通过抓取从目标主机上发送的信息包，在嗅探这些信息包的基础上，判断远程主机的操作系统。</strong>  </p>
-</li>
+<p><strong>被动协议识别技术是用嗅探目标主机上的通信的方式来代替主动查询目标主机。通过抓取从目标主机上发送的信息包，在嗅探这些信息包的基础上，判断远程主机的操作系统。</strong></p></li>
 </ul>
 <p><strong>APT攻击：</strong>APT（Advanced Persistent Threat）是指高级持续性威胁,本质是针对性攻击。利用先进的攻击手段对特定目标进行长期持续性网络攻击的攻击形式，APT攻击的原理相对于其他攻击形式更为高级和先进，其高级性主要体现在APT在发动攻击之前需要对攻击对象的业务流程和目标系统进行精确的收集。在此收集的过程中，此攻击会主动挖掘被攻击对象受信系统和应用程序的漏洞，利用这些漏洞组建攻击者所需的网络，并利用0day漏洞进行攻击。</p>
 <p><strong>0day攻击：</strong>利用没有补丁的漏洞(0day漏洞)进行的攻击</p>
 <p><strong>网络信息截获的主要方法及SNIFFER软件技术</strong>：</p>
 <p>方法：包过滤技术</p>
 <p>sniffer:，中文可以翻译为嗅探器，是一种基于被动侦听原理的网络分析方式。使用这种技术方式，可以监视网络的状态、数据流动情况以及网络上传输的信息。当信息以明文的形式在网络上传输时，便可以使用网络监听的方式来进行攻击。将网络接口设置在监听模式，便可以将网上传输的源源不断的信息截获。</p>
-<h1 id="第四讲"><a href="#第四讲" class="headerlink" title="第四讲"></a>第四讲</h1><p>缓冲区溢出，就是向固定长度的缓冲区中写入超出其预先分配长度的内容，造成缓冲区中数据的溢出，从而覆盖了缓冲区周围的内存空间。黑客借此精心构造填充数据，导致原有程序流程的改变，让程序转而执行特殊的代码，最终获取控制权。</p>
+<h1 id="第四讲">第四讲</h1>
+<p>缓冲区溢出，就是向固定长度的缓冲区中写入超出其预先分配长度的内容，造成缓冲区中数据的溢出，从而覆盖了缓冲区周围的内存空间。黑客借此精心构造填充数据，导致原有程序流程的改变，让程序转而执行特殊的代码，最终获取控制权。</p>
 <p><strong>windows系统栈溢出攻击原理</strong></p>
 <p>栈溢出（Stack Overflow）是在网络与分布式系统中被广泛利用的一种漏洞类型。在汇编中，以线程为线索的指令执行对函数的调用及局部变量的存取是依靠栈来实现的，黑客可以使用特定的脚本语言，通过网络远程向对外提供业务的服务器进行攻击，利用对栈中数据的填充越界，实现有效的漏洞攻击。</p>
 <p>栈溢出是由于C语言系列没有内置检查机制来确保复制到缓冲区的数据不得大于缓冲区的大小</p>
@@ -225,82 +299,73 @@
 <p>通过程序的缓冲区写超出其长度的内容，造成缓冲区的溢出，</p>
 <p>从而破坏程序的堆栈，使程序转而执行其它指令，以达到攻击的目的</p>
 <p>造成缓冲区溢出的原因是 程序中没有仔细检查用户输入的参数</p>
-<h5 id="覆盖邻接变量"><a href="#覆盖邻接变量" class="headerlink" title="覆盖邻接变量"></a>覆盖邻接变量</h5><p>例如buffer大小是8字节</p>
+<h5 id="覆盖邻接变量">覆盖邻接变量</h5>
+<p>例如buffer大小是8字节</p>
 <p>输入8个字符，加上字符串截断字符NULL字符，即可覆盖相邻变量，改变程序运行流程</p>
-<h5 id="修改函数返回地址"><a href="#修改函数返回地址" class="headerlink" title="修改函数返回地址"></a>修改函数返回地址</h5><p>上述覆盖相邻变量的方法虽然很管用，但是漏洞利用对代码环境很苛刻</p>
+<h5 id="修改函数返回地址">修改函数返回地址</h5>
+<p>上述覆盖相邻变量的方法虽然很管用，但是漏洞利用对代码环境很苛刻</p>
 <p>更通用的攻击缓冲区的方法是，瞄准栈帧最下方EBP和函数返回地址等栈帧的状态值</p>
 <p>如果继续增加输入字符，超出buffer[8]字符边界</p>
 <p>将依次淹没 相邻变量、前栈帧EBP、返回地址</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Windows程序的执行流程由代码段ECS和指令指针EIP控制，EIP始终指向下一条要执行指令的地址。当发生中断或要调用子程序时，需要将当前断点信息人栈保存，然后转去执行中断子程序，执行完中断子程序后返回指令将栈顶内容出栈恢复断点ECS和EIP。</span><br><span class="line">这种控制流程看似简单，只需将指令地址按序给ECS和EIP即可，但就是因为这简单的控制而不容许有任何地址计算差错。如果其他缓冲区溢出会导致多余的数据覆盖其他有用内存空间，其中如果将栈内数据覆盖就可能导致修改人栈保存的ECS和EIP，从而使得程序返回时跑飞。</span><br><span class="line">当一个函数被调用时，函数参数、EIP、ECS(段间调用时)、EBP和函数局部变量会依次压栈保存，如图2所示。  </span><br><span class="line">如果溢出部分的数据量足够大或经过攻击者的精心设计，就可能覆盖返回地址，从而改变程序的执行流程，将程序的返回地址修改成其想执行的代码地址，达到攻击目的。</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<h1 id="第五讲"><a href="#第五讲" class="headerlink" title="第五讲"></a>第五讲</h1><p><strong>shellcode编写技术</strong></p>
+<h1 id="第五讲">第五讲</h1>
+<p><strong>shellcode编写技术</strong></p>
 <p>shellcode编写原理</p>
 <p>shellcode编写步骤</p>
 <p>缓冲区溢出防御</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">攻击前</span><br><span class="line">1.适当地应用Java、C#等类型安全的编程语言可以有效地减少使用C&#x2F;C+时的安全风险。</span><br><span class="line">2.增强c&#x2F;c++语言的安全性，如增强语言限制、对编译器加入边界检测等</span><br><span class="line">3.安全编程</span><br><span class="line">4.静态分析</span><br><span class="line">5.动态测试</span><br><span class="line">攻击后</span><br><span class="line">1.基于操作系统的保护，打补丁</span><br><span class="line">2.入侵检测工具</span><br><span class="line">3.访问控制机制，限制不可信应用程序的访问</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="第六讲"><a href="#第六讲" class="headerlink" title="第六讲"></a>第六讲</h1><p><strong>格式化字符串攻击原理</strong></p>
+<h1 id="第六讲">第六讲</h1>
+<p><strong>格式化字符串攻击原理</strong></p>
 <p>如何利用字符串显示堆栈内容、%n修改内存的值</p>
-<h1 id="第七讲"><a href="#第七讲" class="headerlink" title="第七讲"></a>第七讲</h1><p><strong>漏洞挖掘</strong></p>
+<h1 id="第七讲">第七讲</h1>
+<p><strong>漏洞挖掘</strong></p>
 <p>漏洞挖掘一般涉及到很多技术，所讨论的漏洞指的是在网络渗透测试过程中所要寻找的一个系统漏洞，或者是在一个应用程序、服务、驱动程序、内核模块、操作系统或固件中发现一个之前从未被人发现过的漏洞。</p>
 <p><strong>五种类型的漏洞挖掘方法：</strong></p>
-<ol>
+<ol type="1">
 <li>代码审查（有可能涉及到代码的逆向工程分析）</li>
 </ol>
-<p>  人工分析是一种灰盒分析技术。针对被分析目标程序，手工构造特殊输入条件，观察输出、目标状态变化等，获得漏洞的分析技术。</p>
-<ol start="2">
+<p>人工分析是一种灰盒分析技术。针对被分析目标程序，手工构造特殊输入条件，观察输出、目标状态变化等，获得漏洞的分析技术。</p>
+<ol start="2" type="1">
 <li><p>黑盒测试（包括扫描器和模糊测试工具等软件）</p>
-<p>Fuzzing技术：Fuzzing技术是一种基于缺陷注入的自动软件测试技术，它利用黑盒分析技术方法，使用大量半有效的数据作为应用程序的输入，以程序是否出现异常为标志，来发现应用程序中可能存在的安全漏洞。半有效数据是指被测目标程序的必要标识部分和大部分数据是有效的，有意构造的数据部分是无效的，应用程序在处理该数据时就有可能发生错误，可能导致应用程序的崩溃或者触发相应的安全漏洞。</p>
-</li>
-<li><p>补丁比对技术</p>
-</li>
-<li><p>静态分析技术</p>
-</li>
-<li><p>动态分析技术</p>
-</li>
+<p>Fuzzing技术：Fuzzing技术是一种基于缺陷注入的自动软件测试技术，它利用黑盒分析技术方法，使用大量半有效的数据作为应用程序的输入，以程序是否出现异常为标志，来发现应用程序中可能存在的安全漏洞。半有效数据是指被测目标程序的必要标识部分和大部分数据是有效的，有意构造的数据部分是无效的，应用程序在处理该数据时就有可能发生错误，可能导致应用程序的崩溃或者触发相应的安全漏洞。</p></li>
+<li><p>补丁比对技术</p></li>
+<li><p>静态分析技术</p></li>
+<li><p>动态分析技术</p></li>
 </ol>
 <p>Fuzz技术：Fuzz技术的思想就是利用“暴力”来实现对目标程序的自动化测试，如果符合某种情况就认为程序可能存在漏洞或者问题，这里的暴力指的是利用不断地向目标程序发送或者传递不同格式的数据来测试目标程序的反应。</p>
 <p>模糊(Fuzz)测试的优点：</p>
-<p>与传统漏洞挖掘方法相比, 模糊测试技术的优势明显：<br>(1)模糊测试的测试目标是二进制可执行代码, 比基于源代码的白盒测试适用范围更广；<br>(2) 模糊测试是动态实际执行的，不存在静态分析技术中存在的大量误报问题；<br>(3)模糊测试的原理简单，没有大量的理论推导和公式计算，不存在符号执行技术中的路径状态爆炸问题；<br>(4)模糊测试自动化程度高，不需要逆向工程中大量的人工参与。</p>
+<p>与传统漏洞挖掘方法相比, 模糊测试技术的优势明显： (1)模糊测试的测试目标是二进制可执行代码, 比基于源代码的白盒测试适用范围更广； (2) 模糊测试是动态实际执行的，不存在静态分析技术中存在的大量误报问题； (3)模糊测试的原理简单，没有大量的理论推导和公式计算，不存在符号执行技术中的路径状态爆炸问题； (4)模糊测试自动化程度高，不需要逆向工程中大量的人工参与。</p>
 <p>缺点：</p>
-<p>（1）对访问控制漏洞无能为力，因为模糊测试系统无法理解程序的逻辑，所以如一些违反权限控制的安全漏洞难以发现。<br>（2）无法识别多点触发漏洞，当前的模糊测试技术往往只能挖掘出由单个因素引起的漏洞，而对于需要多条件才能触发的漏洞却无能为力</p>
+<p>（1）对访问控制漏洞无能为力，因为模糊测试系统无法理解程序的逻辑，所以如一些违反权限控制的安全漏洞难以发现。 （2）无法识别多点触发漏洞，当前的模糊测试技术往往只能挖掘出由单个因素引起的漏洞，而对于需要多条件才能触发的漏洞却无能为力</p>
 <p>Filefuzz是一种针对文件处理软件进行Fuzz安全测试的工具软件</p>
 <p>文档文件在保存数据信息时，往往采用特殊的编码格式，这些编码格式一般都采用非文本形式，即文档保存的数据不是明文格式，以doc文档文件为例，我们用记事本打开一个doc文档，会发现全部是乱码</p>
-<p>这种非明文形式编码格式目的确保用户只有利用与文档文件相匹配的文件处理软件，才能正确读取文字或图片信息，<strong>防止数据信息被随意泄露。</strong><br>这种非明文形式的编码意味只有文件处理的开发者知道如何解释这些编码格式，而作为漏洞挖掘者一般情况下无从知晓，而文件处理软件的漏洞往往发生在软件处理文档文件过程中，例如文档文件中某个地方数据过长就可能造成软件发生溢出漏洞。</p>
+<p>这种非明文形式编码格式目的确保用户只有利用与文档文件相匹配的文件处理软件，才能正确读取文字或图片信息，<strong>防止数据信息被随意泄露。</strong> 这种非明文形式的编码意味只有文件处理的开发者知道如何解释这些编码格式，而作为漏洞挖掘者一般情况下无从知晓，而文件处理软件的漏洞往往发生在软件处理文档文件过程中，例如文档文件中某个地方数据过长就可能造成软件发生溢出漏洞。</p>
 <p><strong>File Fuzz的原理</strong></p>
 <p>FileFuzz采用字节替换法批量生成待测试文档文件，然后将这些待测试文档文件逐一调用相对应文件处理软件打开，同时监视打开过程中发生的错误，并将错误结果记录下来，让安全研究人员分析该错误是不是属于安全漏洞。</p>
-<p>生成待测文件后，我们可以通过FileFuzz来自动测试所有修改的文档文件<br>•但是Word程序自带有安全模式保护功能</p>
-<p>若是每次手动选择，那会大大延误我们的测试速度，所以我们修改了Word程序的权限阻止安全模<br>式的启动</p>
+<p>生成待测文件后，我们可以通过FileFuzz来自动测试所有修改的文档文件 •但是Word程序自带有安全模式保护功能</p>
+<p>若是每次手动选择，那会大大延误我们的测试速度，所以我们修改了Word程序的权限阻止安全模 式的启动</p>
 <p>修改完成以后我们就可以自动测试修改的文档文件来挖掘漏洞了</p>
-<h1 id="第八讲"><a href="#第八讲" class="headerlink" title="第八讲"></a>第八讲</h1><p>分布式攻击主要的形式有：</p>
-<ol>
+<h1 id="第八讲">第八讲</h1>
+<p>分布式攻击主要的形式有：</p>
+<ol type="1">
 <li><p>拒绝服务攻击（DDOS）</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1探测扫描大量主机以寻找可入侵主机；</span><br><span class="line">2入侵有安全漏洞的主机并获取控制权；</span><br><span class="line">3在每台被入侵主机中安装攻击所用的客户进程或</span><br><span class="line">守护进程；</span><br><span class="line">4向安装有客户进程的主控端主机发出命令，由它</span><br><span class="line">们来控制代理主机上的守护进程进行协同入侵。</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
-<li><p>信息收集</p>
-</li>
-<li><p>口令猜测</p>
-</li>
+<li><p>信息收集</p></li>
+<li><p>口令猜测</p></li>
 </ol>
-<h1 id="第九讲"><a href="#第九讲" class="headerlink" title="第九讲"></a>第九讲</h1><p>windows ADS 攻击技术</p>
+<h1 id="第九讲">第九讲</h1>
+<p>windows ADS 攻击技术</p>
 <p>NTFS交换数据流（Alternate Data Streams，简称ADS）是NTFS磁盘格式的一个特性。在NTFS文件系统下，每个文件都可以存在多个数据流，除了主文件流之外还可以有许多非主文件流寄宿在主文件流中，这些利用NTFS数据流寄宿并隐藏在系统中的非主文件流我们称之为ADS流文件。虽然我们无法看到ADS流文件，但它们却是真实存在。利用ADS数据流，我们可以做很多有趣的事情，但对于用户系统的安全来说也隐藏着巨大的风险。</p>
 <p>命令：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">echo this is a ADS&gt;a.txt:hidden</span><br><span class="line">more &lt;a.txt:hidden</span><br><span class="line"></span><br><span class="line">type text.txt&gt;a.txt.hidden</span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="第十讲"><a href="#第十讲" class="headerlink" title="第十讲"></a>第十讲</h1><p>Hook技术</p>
+<h1 id="第十讲">第十讲</h1>
+<p>Hook技术</p>
 <p><strong>原理</strong></p>
 <p>钩子(HOOK)是WINDOWS系统中非常重要的系统接口，用它可以截获并处理发送给其他程序的消息，完成普通应用程序难以实现的功能。钩子可以监视系统或进程中的各种消息,截获发往目标进程的事件消息并进行处理。我们可以在系统中安装自定义的钩子，监视系统中特定事件的发生，完成特定的功能。</p>
-<p>钩子(Hook)，是Windows消息处理机制的一个平台,应用程序可以在上面设置子程以监视指定窗口的某种消息，而且所监视的窗口可<br>以是其他进程所创建的。当消息到达后，在目标窗口处理函数之前处理它。钩子机制允许应用程序截获处理windows消息或特定事件。</p>
+<p>钩子(Hook)，是Windows消息处理机制的一个平台,应用程序可以在上面设置子程以监视指定窗口的某种消息，而且所监视的窗口可 以是其他进程所创建的。当消息到达后，在目标窗口处理函数之前处理它。钩子机制允许应用程序截获处理windows消息或特定事件。</p>
 <p>钩子实际上是一个处理消息的程序段，通过系统调用，把它挂入系统。每当特定的消息发出，在没有到达目的窗口前，钩子程序就先捕获该消息，亦即钩子函数先得到控制权。这时钩子函数即可以加工处理（改变）该消息，也可以不作处理而继续传递该消息，还可以强制结束消息的传递。</p>
 <p><strong>步骤</strong></p>
-<ol>
+<ol type="1">
 <li><p>定义钩子函数</p>
 <p>钩子函数是一种特殊的回调函数，钩子监视的特定事件发生后，系统会调用钩子函数进行处理。不同事件的钩子函数的形式是各不相同的。</p>
 <p>钩子函数原形：</p>
@@ -308,24 +373,21 @@
 <li><p>安装钩子函数</p>
 <p>在程序初始化的时候，调用函数SetWindowsHookEx安装钩子。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">函数原形：</span><br><span class="line">HHOOK SetWindowsHookEx(intidHook,HOOKPROC lpfn, INSTANCE hMod,DWORD dwThreadId)</span><br><span class="line">int idHook, &#x2F;&#x2F; 钩子的类型，即它处理的消息类型</span><br><span class="line">HOOKPROC lpfn, &#x2F;&#x2F; 钩子子程的地址指针。如果dwThreadId参数为0 或是一个由别的进程创建的线程的标识，lpfn必须指向DLL中的钩子子程。除此以外，lpfn可以指向当前进程的一段钩子子程代码。钩子函数的入口地址，当钩子钩到任何消息后便调用这个函数。</span><br><span class="line">HINSTANCE hMod, &#x2F;&#x2F; 应用程序实例的句柄。标识包含lpfn所指的子程的DLL。如果dwThreadId 标识当前进程创建的一个线程， 而且子程代码位于当前进程，hMod必须为NULL。可以很简单的设定其为本应用程序的实例句柄。</span><br><span class="line">DWORD dwThreadId &#x2F;&#x2F; 与安装的钩子子程相关联的线程的标识符。如果为0，钩子子程与所有的线程关联，即为全局</span><br><span class="line">钩子。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
 <p>使用API函数SetWindowsHookEx()把一个应用程序定义的钩子子程安装到钩子链表中。SetWindowsHookEx函数总是在Hook链的开头安装Hook子程。当指定类型的Hook监视的事件发生时，系统就调用与这个Hook关联的Hook链的开头的Hook子程。每一个Hook链中的Hook子程都决定是否把这个事件传递到下一个Hook子程。Hook子程传递事件到下一个Hook子程需要调用CallNextHookEx函数。</p>
 <p>在钩子函数中实现自定义的功能，然后调用回调函数CallNextHookEx把钩子消息传递给钩子链接的下一个钩子函数。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">原形：</span><br><span class="line">LRESULT CallNextHookEx(HHook hhk,int nCode,WPARAM wPrama,LPARAM lparam)</span><br><span class="line">hhk为当前钩子的句柄，由SetWindowsHookEx()函数返回。</span><br><span class="line">NCode为传给钩子过程的事件代码。</span><br><span class="line">wParam和lParam 分别是传给钩子子程的wParam值，其具体含义与钩子类型有关。</span><br><span class="line"></span><br><span class="line">这个函数成功时返回钩子链中下一个钩子过程的返回值，返回值的类型依赖于钩子的类型。</span><br></pre></td></tr></table></figure>
-
 <p>在钩子函数中，也可以直接返回TRUE来丢弃该消息，阻止消息传递。</p>
-<p>函数成功则返回钩子子程的句柄，失败返回NULL。</p>
-</li>
-<li><p>调用钩子函数</p>
-</li>
+<p>函数成功则返回钩子子程的句柄，失败返回NULL。</p></li>
+<li><p>调用钩子函数</p></li>
 <li><p>卸载钩子</p>
 <p>钩子在使用完之后需要用UnHookWindowsHookEx()卸载，否则会造成麻烦。释放钩子比较简单，UnHookWindowsHookEx()只有一个参数。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">函数原型如下：</span><br><span class="line">UnHookWindowsHookEx</span><br><span class="line">(</span><br><span class="line">	HHOOK hhk;</span><br><span class="line">);</span><br><span class="line">函数成功返回TRUE，否则返回FALSE。</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
 </ol>
-<p>按使用范围分类，主要有线程钩子和系统钩子<br>（1）线程钩子监视指定线程的事件消息。<br>（2）系统钩子监视系统中的所有线程的事件消息。因为系统钩子会影响系统中所有的应用程序，所以钩子函数必须放在独立的动态链接库(DLL) 中。这是系统钩子和线程钩子很大的不同之处。</p>
-<p>钩子链表和钩子子程<br>每一个Hook都有一个与之相关联的指针列表，称之为钩子链表，由系统来维护。这个列表的指针指向指定的、应用程序定义的、被Hook子程调用的回调函数，也就是该钩子的各个处理子程。当与指定的Hook类型关联的消息发生时，系统就把这个消息传递到Hook子程。一些Hook子程可以只监视消息，或者修改消息，或者停止消息的前进，避免这些消息传递到下一个Hook子程或者目的窗口。最后安装的钩子放在链的开始，而最早安装的钩子放在最后，也就是后加入的先获得控制权。</p>
+<p>按使用范围分类，主要有线程钩子和系统钩子 （1）线程钩子监视指定线程的事件消息。 （2）系统钩子监视系统中的所有线程的事件消息。因为系统钩子会影响系统中所有的应用程序，所以钩子函数必须放在独立的动态链接库(DLL) 中。这是系统钩子和线程钩子很大的不同之处。</p>
+<p>钩子链表和钩子子程 每一个Hook都有一个与之相关联的指针列表，称之为钩子链表，由系统来维护。这个列表的指针指向指定的、应用程序定义的、被Hook子程调用的回调函数，也就是该钩子的各个处理子程。当与指定的Hook类型关联的消息发生时，系统就把这个消息传递到Hook子程。一些Hook子程可以只监视消息，或者修改消息，或者停止消息的前进，避免这些消息传递到下一个Hook子程或者目的窗口。最后安装的钩子放在链的开始，而最早安装的钩子放在最后，也就是后加入的先获得控制权。</p>
 <p>钩子子程是一个应用程序定义的回调函数(CALLBACK Function),不能定义成某个类的成员函数，只能定义为普通的C函数。用以监视系统或某一特定类型的事件，这些事件可以是与某一特定线程关联的，也可以是系统中所有线程的事s件。</p>
-<h1 id="第十一讲"><a href="#第十一讲" class="headerlink" title="第十一讲"></a>第十一讲</h1><p>DLL注入</p>
+<h1 id="第十一讲">第十一讲</h1>
+<p>DLL注入</p>
 <p>把功能代码封装在DLL中，利用系统对DLL的重定位机制实现代码注入，当DLL首次被映射到进程地址空间时，系统会自动执行其入口函数DllMain中的代码，这种方式也称为模块注入，是木马程序设计者普遍使用的技术。</p>
 <p>注入方式</p>
 <p><strong>1.注册表注入</strong></p>
@@ -333,110 +395,74 @@
 <p>使用系统钩子注入．钩子是WINODOWS消息处理机制的一部分。根据钩子函数所在的位置分为系统钩子和线程钩子，系统钩子要把钩子函数注入到其他进程的地址空间，需要将钩子函数代码写在模块DLL中，系统钩子可以监视整个系统内的钩子消息．注入程序通过SetWindowsHookEx函数设置系统钩子。</p>
 <p>当一个应用接收到某个消息时，WINODOWS系统首先检查该消息类型的钩子是否存在，如果存在则检查相应的钩子函数模块是否存在于当前进程的地址空间中，如不在，系统就调用LoadLibrary加载钩子函数模块。</p>
 <p><strong>3.使用远程线程函数(CreateRemoteThread)注入DLL</strong></p>
-<p>使用CreateRemoteThread和Loadlibrary注入，即跨进程创建线程．注入程序先把DLL文件路径写入目标进程，再获取装载DLL的<br>LoadLibray函数地址，最后调用CreateRemoteThread在目标进程中建立以LoadLibrary函数地址为线程函数地址、以DLL文件名为参数的远程线程。</p>
-<p>CreateRemoteThread调用内核函数NtCreateThread建立线程，而NtCreateThread函数的执行引起了LoadLibrary函数调用，用于<br>加载进程用到的动态链接库</p>
+<p>使用CreateRemoteThread和Loadlibrary注入，即跨进程创建线程．注入程序先把DLL文件路径写入目标进程，再获取装载DLL的 LoadLibray函数地址，最后调用CreateRemoteThread在目标进程中建立以LoadLibrary函数地址为线程函数地址、以DLL文件名为参数的远程线程。</p>
+<p>CreateRemoteThread调用内核函数NtCreateThread建立线程，而NtCreateThread函数的执行引起了LoadLibrary函数调用，用于 加载进程用到的动态链接库</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">具体步骤如下：</span><br><span class="line">１）取得远程进程的进程ID；</span><br><span class="line">２）在远程进程空间中分配一段内存用来存放要注入的DLL完整路径；</span><br><span class="line">３）将要注入的DLL的路径写到刚才分配的</span><br><span class="line">远程进程空间；</span><br><span class="line">４）从Kernel32.dll中取得LoadLibray的地址；</span><br><span class="line">５）调用CreateRemoteThread函数以从Kernel32.dll中取得的LoadLibrary函数的地址为线程函数的地址，以我们要注入的DLL文件名为参数，创建远程线程；</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="第十二讲"><a href="#第十二讲" class="headerlink" title="第十二讲"></a>第十二讲</h1><p>sniffer技术</p>
-<p>正常情况下，一个网络接口（网卡）应该只响应这样的两种数据帧：<br>• 与自己的MAC地址相匹配的数据帧(包括组播)；<br>• 发向所有机器的广播数据帧<br>网卡接收到传来的数据帧，其内嵌的处理程序就会检查数据帧的目的MAC地址，并根据网卡驱动程序设置的接收模式来判断该不该进一步处理。<br>如果应该处理，就接收该数据帧并产生中断信号通知CPU，否则就简单放弃。CPU得到中断信号产生中断，操作系统才会根据网卡驱动程序设置的中断处理程序地址来调用驱动程序接收数据，数据接收之后被放入信号堆栈，等待操作系统进一步处理。<br>网卡一般有4种接收模式：<br>• 广播模式：该模式下能接收网络中广播信息。<br>• 组播模式：该模式下能接收组播数据。<br>• 直接模式：只有匹配目的MAC地址的网卡才能接收该数据帧。<br>• 混杂模式（Promiscuous Mode）：网卡能接收一切监听到的数据帧。</p>
+<h1 id="第十二讲">第十二讲</h1>
+<p>sniffer技术</p>
+<p>正常情况下，一个网络接口（网卡）应该只响应这样的两种数据帧： • 与自己的MAC地址相匹配的数据帧(包括组播)； • 发向所有机器的广播数据帧 网卡接收到传来的数据帧，其内嵌的处理程序就会检查数据帧的目的MAC地址，并根据网卡驱动程序设置的接收模式来判断该不该进一步处理。 如果应该处理，就接收该数据帧并产生中断信号通知CPU，否则就简单放弃。CPU得到中断信号产生中断，操作系统才会根据网卡驱动程序设置的中断处理程序地址来调用驱动程序接收数据，数据接收之后被放入信号堆栈，等待操作系统进一步处理。 网卡一般有4种接收模式： • 广播模式：该模式下能接收网络中广播信息。 • 组播模式：该模式下能接收组播数据。 • 直接模式：只有匹配目的MAC地址的网卡才能接收该数据帧。 • 混杂模式（Promiscuous Mode）：网卡能接收一切监听到的数据帧。</p>
 <p><strong>Sniffer的基本原理</strong>：以太网基于广播方式传送数据，所有物理信号都被传送到每一个主机节点，此外网卡可被设置成混杂模式，这种模式下无论监听到的数据帧目的地址如何，网卡都能够接收。</p>
-<h1 id="第十三讲"><a href="#第十三讲" class="headerlink" title="第十三讲"></a>第十三讲</h1><p>sniffer编程技术</p>
+<h1 id="第十三讲">第十三讲</h1>
+<p>sniffer编程技术</p>
 <p>1.libpcap编程</p>
-<p>​    Libpcap (Packet Capture library)即数据包捕获函数库，可以工作在绝大多数类unix平台下。该库提供的C函数接口可用于捕获经过网络接口的数据包。</p>
+<p>​ Libpcap (Packet Capture library)即数据包捕获函数库，可以工作在绝大多数类unix平台下。该库提供的C函数接口可用于捕获经过网络接口的数据包。</p>
 <p>2.winpcap编程</p>
 <p>Winpcap包括三个部分：</p>
-<p>第一个模块：内核级的包过滤驱动程序NPF(Netgroup Packet Filter)<br>第二个模块：低级动态链接库packet.dll，在Win32 平台上提供了与NPF 的一个通用接口<br>第三个模块：用户级的wpcap.dll，通过调用packet.dll提供的函数生成</p>
+<p>第一个模块：内核级的包过滤驱动程序NPF(Netgroup Packet Filter) 第二个模块：低级动态链接库packet.dll，在Win32 平台上提供了与NPF 的一个通用接口 第三个模块：用户级的wpcap.dll，通过调用packet.dll提供的函数生成</p>
 <p>3.基于Linux Packet的编程技术</p>
-<h1 id="第十四讲"><a href="#第十四讲" class="headerlink" title="第十四讲"></a>第十四讲</h1><table>
+<h1 id="第十四讲">第十四讲</h1>
+<table>
 <thead>
-<tr>
+<tr class="header">
 <th>端口</th>
 <th>服务</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>21</td>
 <td>FTP</td>
 </tr>
-<tr>
+<tr class="even">
 <td>22</td>
 <td>SSH</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>23</td>
 <td>Telnet</td>
 </tr>
-<tr>
+<tr class="even">
 <td>53</td>
 <td>DNS</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>80</td>
 <td>Http</td>
 </tr>
-<tr>
+<tr class="even">
 <td>110</td>
 <td>POP3</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>443</td>
 <td>Https</td>
 </tr>
-<tr>
+<tr class="even">
 <td>3389</td>
 <td>远程终端服务</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p>端口重定向</p>
 <p>重定向后门程序通过在某些端口上监听连接，把收到的原始分组转发到另外某个指定的目标主机及端口。攻击者一旦成功入侵网络上的某个主机后，一般可通过端口重定向技术把受害主机接收的网络信息转发到攻击者指定的机器上。重定向技术可以使攻击者访问防火墙后面的主机。常用的端口重定向程序有：Datapipe、rinetd、Fpipe</p>
 <p>端口复用</p>
-<p>端口复用是指一个端口上建立了多个连接，而不是在一个端口上面开放了多个服务而互不干扰。假如在已经开放了WWW服务<br>的主机上，在80端口再添加一项服务，一般来说只有2种可能：1.添加服务失败2.WWW服务出错。</p>
+<p>端口复用是指一个端口上建立了多个连接，而不是在一个端口上面开放了多个服务而互不干扰。假如在已经开放了WWW服务 的主机上，在80端口再添加一项服务，一般来说只有2种可能：1.添加服务失败2.WWW服务出错。</p>
 ]]></content>
       <categories>
         <category>网络对抗</category>
       </categories>
       <tags>
         <tag>网络对抗</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>考研资料：数学公式</title>
-    <url>/2021/06/23/%E6%95%B0%E5%AD%A6%E5%85%AC%E5%BC%8F/</url>
-    <content><![CDATA[<p>考研必须记住的数学公式！</p>
-<span id="more"></span>
-<h2 id="常见的等价无穷小"><a href="#常见的等价无穷小" class="headerlink" title="常见的等价无穷小"></a>常见的等价无穷小</h2><p><strong>x的一阶无穷小</strong><br>$$<br>x\sim\sin x\sim\tan x\sim\arcsin x\sim\arctan x\sim\ln(1+x)\sim e^x-1\a^x-1\sim x\ln a\\sqrt[n]{1+x}-1\sim \frac 1nx\<br>(1+x)^a-1\sim ax<br>$$</p>
-<p><strong>x的二阶无穷小</strong></p>
-<p>​<br>$$<br>1-\cos x\sim \frac 12x^2\quad\implies\quad1-(\cos x)^n\sim \frac n2x^2\<br>\ln (1+x)-x\sim -\frac 12x^2\<br>e^x-1-x\sim \frac 12x^2<br>$$<br><strong>x的三阶无穷小</strong><br>$$<br>\sin x-x\sim -\frac 16x^3 \quad\iff\quad \arcsin x -x\sim \frac 16x^3\<br>\tan x-x\sim \frac13x^3\quad\iff\quad \arctan x-x\sim -\frac13x^3\<br>\tan x-\sin x\sim \frac 12x^3<br>$$</p>
-<h2 id="常见的泰勒公式"><a href="#常见的泰勒公式" class="headerlink" title="常见的泰勒公式"></a>常见的泰勒公式</h2><p>$$<br>e^x = 1+\frac{x}{1!}+\frac{x^2}{2!}+\cdots+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\sin x=x-\frac{1}{3!}x^3+\frac{1}{5!}x^5-\cdots+(-1)^n\frac{1}{(2n+1)!}x^{2n+1}+o(x^{2n+2})\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\cos x=1-\frac{1}{2!}x^2+\frac{1}{4!}x^4-\cdots+(-1)^n\frac{1}{(2n)!}x^{2n}+o(x^{2n+1})\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>ln(1+x)=x-\frac{1}{2}x^2+\frac{1}{3}x^3-\cdots+(-1)^{n-1}\frac{1}{n}x^{n}+o(x^{n})\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>(1+x)^m=1+mx+\frac{m(m-1)}{2!}x^2+\cdots+\frac{m(m-1)\cdots(m-n+1)}{n!}x^n+o(x^n)<br>$$</p>
-<p>$$<br>\frac{1}{1-x}=1+x+x^2+x^3+\cdots+x^n+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\frac{1}{1+x}=1-x+x^2-x^3+\cdots+(-1)^nx^n+o(x^n)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\tan x=x+\frac{x^3}{3}+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\arctan x=x-\frac{x^3}{3}+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<p>$$<br>\arcsin x=x+\frac{1}{3!}x^3+o(x^3)\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad\quad<br>$$</p>
-<h2 id="等差数列"><a href="#等差数列" class="headerlink" title="等差数列"></a>等差数列</h2><h3 id="一般定义"><a href="#一般定义" class="headerlink" title="一般定义"></a>一般定义</h3><p><img src="https://bkimg.cdn.bcebos.com/formula/0430ad02fe78295da19dddfc4722fbcd.svg" alt="img"></p>
-<h2 id="等比数列"><a href="#等比数列" class="headerlink" title="等比数列"></a>等比数列</h2><h3 id="通项公式"><a href="#通项公式" class="headerlink" title="通项公式"></a>通项公式</h3><p><img src="https://bkimg.cdn.bcebos.com/formula/1b6ded94ad9a90fad17a2ee8b9c5d071.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/dadfdcdd5bfb3859c3975d404111083c.svg" alt="img"></p>
-<h3 id="推广式"><a href="#推广式" class="headerlink" title="推广式"></a>推广式</h3><p><img src="https://bkimg.cdn.bcebos.com/formula/dadfdcdd5bfb3859c3975d404111083c.svg" alt="img"></p>
-<h3 id="求和公式"><a href="#求和公式" class="headerlink" title="求和公式"></a>求和公式</h3><p><img src="https://bkimg.cdn.bcebos.com/formula/0224b1630bb4efb692f7e4cf32902998.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/d4f111ae1c48bb57106711c323bdf46d.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/445748b49d85232a0bd9597db6ae6d4d.svg" alt="img"></p>
-<h3 id="求和公式推导"><a href="#求和公式推导" class="headerlink" title="求和公式推导"></a>求和公式推导</h3><p><img src="https://bkimg.cdn.bcebos.com/formula/0173f59acdeebf08dcd18bd3cd0b3fe9.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/4410a0fe031e2e5999ca8bca3d736883.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/0ced12f94363da40e3884d1af8a7243e.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/eb47b9df32a9c23a2d15440689fbc21c.svg" alt="img"></p>
-<p><img src="https://bkimg.cdn.bcebos.com/formula/e6b6944558aa88d626c165fb4822b912.svg" alt="img"></p>
-]]></content>
-      <categories>
-        <category>考研资料</category>
-      </categories>
-      <tags>
-        <tag>数学公式</tag>
       </tags>
   </entry>
 </search>
